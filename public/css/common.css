@@ -2,6 +2,7 @@
 
 .main{width:100%; height:100.2%;}
 .wrap{max-width:1600px; width:100%; height:100%; margin:0 auto; position: relative;}
+.index{height:100%;}
 
 /***** Top *****/
 
@@ -10,15 +11,22 @@
 .menu_bar{float:right; cursor: pointer;}
 .menu_bar > .ham {width:40px; height:3px; background-color:#000; margin-bottom:10px;}
 
+/***** Header *****/
+
+.head {position:relative; width:100%; height:15%; display:table;}
+.head > div {display:table-cell; vertical-align:middle;}
+
 /***** Bottom *****/
 
+.bot {width:100%; height:15%; display:table;}
+.bot > div {display:table-cell; vertical-align:middle;}
 .bottom{width:100%;}
 .bot-txt{float:left;}
 .bot-icon{float:right; padding-top:0.9rem;}
 .bot-txt > span{display:block;}
 .bot-txt > span:first-child {font-weight: bold; font-size:1.125rem;}
 .bot-icon > a{color:#000;}
-.bot-icon > a i{margin-left:0.7rem; font-size:1.25rem;}
+.bot-icon > a i{margin-left:0.7rem; font-size:1.35rem;}
 .bot-icon > a:first-child:hover{color:#3b5998; -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
 .bot-icon > a:nth-child(2):hover{color:#b21b85; -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
 .bot-icon > a:nth-child(3):hover{color:#cb2027; -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}

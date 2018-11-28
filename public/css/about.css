@@ -2,13 +2,9 @@
 
 .cont{max-width:1600px; width:100%; margin:0 auto;}
 
-/***** Top *****/
-
-.header{max-width:1600px; width:100%;margin:4.1428rem auto 6rem;}
-
 /***** Section *****/
 
-.section{width:100%; height:100%; border:1px solid #f00;}
+.section{width:100%; height:100%;}
 .banner-out{background-color:#fff; height:50%; width:100%; position: relative;}
 .banner{background-image:url(../img/coding.jpg); background-size:cover; background-repeat: no-repeat; height:100%; width:100%; opacity:0.8;}
 
@@ -17,7 +13,7 @@
 .ban-tit > h1{font-weight: bold; font-size:3.5rem; letter-spacing:0.3rem; padding:2rem 0;}
 .ban-tit > p{font-size:1.125rem; font-weight:bold; letter-spacing:0.2rem;}
 
-.content{border:1px solid #f00;} 
+.content{} 
 .bt-about{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
 font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
@@ -35,12 +31,12 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 /* introduce */
 
-.who{width:1200px; height:100%; margin:0 auto; padding-top:2rem; display:none;}
+.who{width:800px; height:100%; margin:0 auto; padding-top:2rem; display:none;}
 .who > h3{color:#fff; text-align: center;  font-size:2.14rem; position: absolute; top:0; left:50%; 
     -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%);}
 .who > li {width:50%; height:100%; float:left;}
-.who > li > div{ margin:0 auto; background-color:#fff; width:50%; height:50%;}
-.who > li > div > span{ display:block;}
+.who > li > div{ margin:0 auto; background-color:#ccc; width:98%; height:50%;}
+.who > li > div > span{display:block; color:#fff;}
 
 /* strength */
 
@@ -56,9 +52,8 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .slide-cir li:nth-child(2) div{background-color:transparent; border:1px solid #fff;}
 .slide-cir li:last-child div{background-color:transparent; border:1px solid #fff;}
 
-/***** Bottom *****/
 
-.bot{margin:4.1428rem auto; border:1px solid #f00;}
+
 
 
 

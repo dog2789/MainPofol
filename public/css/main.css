@@ -1,18 +1,15 @@
 /***** Top *****/
 
-.head {position:relative; width:100%; height:10%; display:table;}
+.head {position:relative; width:100%; height:15%; display:table;}
 .head > div {display:table-cell; vertical-align:middle;}
 
 /***** Mid *****/
 
-.mid {width:100%; max-width:1600px; overflow:hidden; height:80%; display:table;}
+.mid {width:100%; max-width:1600px; overflow:hidden; height:70%; display:table;}
 .mid > div {display:table-cell; vertical-align:middle;}
 .title {font-weight:800;}
 .title > li { position:relative; left:-1000px; opacity:0;}
-.title span {display:inline-block; font-size:8rem; background-color:#000; color:#fff; letter-spacing:0.2rem; padding:0; margin:0; line-height:8rem;}
+.title span {display:inline-block; font-size:8rem; background-color:#000; color:#fff; letter-spacing:0.2rem; padding:0.5rem; margin:0; line-height:8rem;}
 .fade{opacity:1;}
 
-/***** Bottom *****/
 
-.bot {width:100%; height:10%; display:table;}
-.bot > div {display:table-cell; vertical-align:middle;}
