@@ -17,7 +17,7 @@
 .ban-tit > h1{font-weight: bold; font-size:3.5rem; letter-spacing:0.3rem; padding:2rem 0;}
 .ban-tit > p{font-size:1.125rem; font-weight:bold; letter-spacing:0.2rem;}
 
-.content{border:1px solid #f00;}
+.content{border:1px solid #f00;} 
 .bt-about{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
 font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
@@ -40,6 +40,7 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
     -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%);}
 .who > li {width:50%; height:100%; float:left;}
 .who > li > div{ margin:0 auto; background-color:#fff; width:50%; height:50%;}
+.who > li > div > span{ display:block;}
 
 /* strength */
 
