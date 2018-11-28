@@ -1,16 +1,18 @@
 /***** Top *****/
 
-.head{position: absolute; top:6%; width:100%;}
+.head {position:relative; width:100%; height:10%; display:table;}
+.head > div {display:table-cell; vertical-align:middle;}
 
 /***** Mid *****/
 
-.mid{width:100%; max-width:1600px; overflow:hidden;}
-.title{font-size:8rem; font-weight:800; position: absolute; top:50%; left:-775px; transform:translateY(-50%); -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -o-transform:translateY(-50%); opacity:0;}
-.title > span {display:block; background-color:#000; color:#fff; letter-spacing:0.2rem; line-height:9rem; padding:0.5rem 1rem;}
-.title > span:first-child{width:26%;}
-.title > span:nth-child(2){width:88%;}
+.mid {width:100%; max-width:1600px; overflow:hidden; height:80%; display:table;}
+.mid > div {display:table-cell; vertical-align:middle;}
+.title {font-weight:800;}
+.title > li { position:relative; left:-1000px; opacity:0;}
+.title span {display:inline-block; font-size:8rem; background-color:#000; color:#fff; letter-spacing:0.2rem; padding:0; margin:0; line-height:8rem;}
 .fade{opacity:1;}
 
 /***** Bottom *****/
 
-.bot{position: absolute; bottom:6%; width:100%;}
+.bot {width:100%; height:10%; display:table;}
+.bot > div {display:table-cell; vertical-align:middle;}

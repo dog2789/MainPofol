@@ -1,5 +1,8 @@
 /***** index *****/
 
 
-$(".title").stop().animate({"left" : 0+"px", "opacity": 1}, 1500);
+$(".title > li").each(function(i){
+	$(this).stop().delay(i*200).animate({"left":0, "opacity":1}, 1500);
+});
+
   
