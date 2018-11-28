@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
     <script defer src="/__/firebase/5.5.9/firebase-app.js"></script>
     <script defer src="/__/firebase/5.5.9/firebase-auth.js"></script>
@@ -22,15 +23,18 @@
         <div class="toggle">
           <div class="tog-out">
             <div class="tog-in">
-                <span>About</span>
-                <span>Works</span>
-                <span>Contact</span>
+                <a href="about.html" class="about"><span>About</span></a>
+                <div class="sm-bar1"></div>
+                <a href="works.html"  class="works"><span>Works</span></a>
+                <div class="sm-bar2"></div>
+                <a href="contact.html" class="contact"><span>Contact</span></a>
+                <div class="sm-bar3"></div>
             </div>
           </div>
         </div>
       <div class="wrap">
         <div class="head clear">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img src="../icon/logo3.png" class="img" alt="logo">
           </a>
           <div class="menu_bar" id="toggle">
@@ -41,13 +45,13 @@
         </div>
         <div class="mid clear">
           <div class="title clear">
-            <span>
+            <span class="main-tit">
               BE
             </span>
-            <span>
+            <span class="main-tit">
               CREATIVE
             </span>
-            <span>
+            <span class="main-tit">
               PUBLISHER
             </span>
           </div>
@@ -59,10 +63,10 @@
               <span>Jung Woo Jae</span>
             </div>
             <div class="bot-icon">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-pinterest-square"></i>
-                <i class="fas fa-envelope-square"></i>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                <a href="#"><i class="fas fa-envelope-square"></i></a>
             </div>
           </div>
         </div>
@@ -72,6 +76,7 @@
 
 
 
+   <script defer src="../js/common.js"></script>
    <script defer src="../js/main.js"></script>
   </body>
 </html>

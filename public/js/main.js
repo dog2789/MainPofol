@@ -1,3 +1,5 @@
-$("#toggle").click(function(){
-    $(".toggle").stop().slideToggle(500);
-});
+/***** index *****/
+
+
+$(".title").stop().animate({"left" : 0+"px", "opacity": 1}, 1500);
+  
