@@ -1,7 +1,5 @@
 /***** Common *****/
 
-.cont{max-width:1600px; width:100%; margin:0 auto;}
-
 /***** Section *****/
 
 .section{width:100%; height:100%;}
@@ -11,7 +9,7 @@
 .ban-tit{position: absolute; top:120%; left:10.7rem; opacity:0;}
 .ban-tit > .main-tit > span{font-size:7rem; font-weight:800; display:block; letter-spacing:-0.3rem; line-height:7rem; padding:0.5rem 0;}
 .ban-tit > h1{font-weight: bold; font-size:3.5rem; letter-spacing:0.3rem; padding:2rem 0; color:#111;}
-.ban-tit > p{font-size:1.125rem; letter-spacing:0.25rem; color:#777; font-weight: 300;}
+.ban-tit > p{font-size:1.125rem; letter-spacing:0.25rem; color:#777; font-weight: 400;}
 
 .bt-about{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
 font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
@@ -45,16 +43,17 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .str{max-width:1600px; width:100%;}
 .str > li{width:20%; float:left; text-align: center;}
 .str > li > img{width:70%; margin:0 auto; margin-bottom:2rem;}
-.str > li > span{color:#fff; font-size:1.25rem; display:block;}
+.str > li > span{color:#fff; font-size:1.25rem; display:block; font-weight: 400;}
 .str > li:nth-child(4) > span{padding-left:0.75rem;}
+
 
 /* slide-circle */
 .slide-cir{position: absolute; bottom:5%; left:50%; width:100px; margin:0 auto; -webkit-transform:translate(-50%, -5%);
     -moz-transform:translate(-50%, -5%); -o-transform:translate(-50%, -5%); transform:translate(-50%, -5%);}
 .slide-cir li{width:33.3%; float:left;}
-.slide-cir li div{width:20px; height:20px; border-radius: 50%; background-color:#fff;  margin:auto; box-sizing:border-box; cursor: pointer;}
-.slide-cir li:nth-child(2) div{background-color:transparent; border:1px solid #fff;}
-.slide-cir li:last-child div{background-color:transparent; border:1px solid #fff;}
+.slide-cir li div{width:20px; height:20px; border-radius: 50%; margin:auto; box-sizing:border-box; cursor: pointer; border:1px solid #fff;}
+.cir-ba{background-color:#fff;}
+.circle{background-color:#fff;}
 
 
 
