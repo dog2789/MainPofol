@@ -25,12 +25,28 @@
 .bot-icon{float:right; padding-top:0.9rem;}
 .bot-txt > span{display:block;}
 .bot-txt > span:first-child {font-weight: bold; font-size:1.125rem;}
-.bot-icon > a{color:#000;}
-.bot-icon > a i{margin-left:0.7rem; font-size:1.35rem;}
+.bot-icon > a{color:#000; float:left; text-align: center;}
+.bot-icon > a > i{margin-left:1rem; font-size:1.5rem; }
+.bot-icon > a > div{width:0%; height:2px; float:right; animation-duration: 0.5s; animation-fill-mode:forwards;}
 .bot-icon > a:first-child:hover{color:#3b5998; -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
 .bot-icon > a:nth-child(2):hover{color:#b21b85; -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
 .bot-icon > a:nth-child(3):hover{color:#cb2027; -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
 .bot-icon > a:last-child:hover{color:#236131; -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
+.bot-icon > a:last-child{padding-top:0.1rem;}
+.bot-icon > a:first-child > div{background-color:#3b5998;}
+.bot-icon > a:nth-child(2) > div{background-color:#b21b85;}
+.bot-icon > a:nth-child(3) > div{background-color:#cb2027;}
+.bot-icon > a:last-child > div{background-color:#236131;}
+
+@keyframes iconAni{
+    0%{width:0%;}
+    100%{width:60%;}
+}
+@keyframes iconbackAni{
+    0%{width:60%;}
+    100%{width:00%;}
+}
+
 
 /***** Toggle *****/
 
@@ -39,14 +55,33 @@
 .tog-in{position: absolute; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%);
     -moz-transform:translateY(-50%); -o-transform:translateY(-50%);}
 .tog-in a{font-size:2.5rem; display:block; font-weight: bold; letter-spacing:0.2rem; color:#fff;}
-.sm-bar1{width:114px; height:2px; background-color:#fff; opacity:0;}
-.sm-bar2{width:120px; height:2px; background-color:#fff; opacity:0; margin-bottom:0.8rem;}
-.sm-bar3{width:150px; height:2px; background-color:#fff; opacity:0;}
-.works{margin-top:0.8rem;}
+.sm-bar1{width:0; height:2px; background-color:#fff;  animation-duration: 0.5s; animation-fill-mode:forwards;}
+.sm-bar2{width:0; height:2px; background-color:#fff;  animation-duration: 0.5s; animation-fill-mode:forwards;}
+.sm-bar3{width:0; height:2px; background-color:#fff;  animation-duration: 0.5s; animation-fill-mode:forwards;}
+.works{margin:0.5rem 0;}
 
-
-
-
-
-
+@keyframes smbarAni1 {
+    0%{width:0;}
+    100%{width:114px;}
+}
+@keyframes smbarbackAni1 {
+    0%{width:114px;}
+    100%{width:0;}
+}
+@keyframes smbarAni2 {
+    0%{width:0;}
+    100%{width:120px;}
+}
+@keyframes smbarbackAni2 {
+    0%{width:120px;}
+    100%{width:0;}
+}
+@keyframes smbarAni3 {
+    0%{width:0;}
+    100%{width:150px;}
+}
+@keyframes smbarbackAni3 {
+    0%{width:150px;}
+    100%{width:0;}
+}
 

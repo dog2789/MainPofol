@@ -8,12 +8,11 @@
 .banner-out{background-color:#fff; height:50%; width:100%; position: relative;}
 .banner{background-image:url(../img/coding.jpg); background-size:cover; background-repeat: no-repeat; height:100%; width:100%; opacity:0.8;}
 
-.ban-tit{position: absolute; top:88%; left:10.7rem;}
-.ban-tit > span{font-size:7rem; font-weight:800; display:block; letter-spacing:-0.3rem; line-height:7rem; padding:0.5rem 0;}
-.ban-tit > h1{font-weight: bold; font-size:3.5rem; letter-spacing:0.3rem; padding:2rem 0;}
-.ban-tit > p{font-size:1.125rem; font-weight:bold; letter-spacing:0.2rem;}
+.ban-tit{position: absolute; top:120%; left:10.7rem; opacity:0;}
+.ban-tit > .main-tit > span{font-size:7rem; font-weight:800; display:block; letter-spacing:-0.3rem; line-height:7rem; padding:0.5rem 0;}
+.ban-tit > h1{font-weight: bold; font-size:3.5rem; letter-spacing:0.3rem; padding:2rem 0; color:#111;}
+.ban-tit > p{font-size:1.125rem; letter-spacing:0.25rem; color:#777; font-weight: 300;}
 
-.content{} 
 .bt-about{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
 font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
@@ -30,17 +29,24 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 /* introduce */
 
-.who{width:800px; height:100%; margin:0 auto; padding-top:2rem; display:none; margin:0 auto 6rem; padding-top:1rem;}
+.who{width:800px; height:100%; margin:0 auto; display:none; }
 .who > p{color:#fff; text-align: center;  font-size:2.14rem;  margin:0 auto 6rem; padding-top:1rem;}
-.who > li {width:46%; height:100%; float:left;}
+.who > li {width:46%; height:50%; float:left;}
 .who > li:nth-child(2){margin-right:8%;}
-.who > li > .photo-me{ margin:0 auto; background-color:#999; width:98%; height:50%;}
+.who > li > .photo-me{ margin:0 auto; background-color:#999; width:50%; height:90%; color:#fff;}
 .who > li > div > span{display:block; color:#fff; font-size:1.25rem; margin-bottom:1rem;}
+.who > li > div > span a{color:#fff;}
+.who > li > div > span a:hover{color:#225f2f; transition:1s ease;}
 
 /* strength */
 
 .strength {display:none;}
 .strength > p{color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
+.str{max-width:1600px; width:100%;}
+.str > li{width:20%; float:left; text-align: center;}
+.str > li > img{width:70%; margin:0 auto; margin-bottom:2rem;}
+.str > li > span{color:#fff; font-size:1.25rem; display:block;}
+.str > li:nth-child(4) > span{padding-left:0.75rem;}
 
 /* slide-circle */
 .slide-cir{position: absolute; bottom:5%; left:50%; width:100px; margin:0 auto; -webkit-transform:translate(-50%, -5%);

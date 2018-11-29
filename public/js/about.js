@@ -16,3 +16,7 @@ $(".circle3").click(function(){
     $(".strength").css("display", "block");
 });
 
+$(".ban-tit").each(function(i){
+    $(this).stop().delay(i*200).animate({"top":"88%", "opacity":1}, 2000);
+});
+
