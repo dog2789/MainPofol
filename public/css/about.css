@@ -19,32 +19,35 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .black-table{width:100%; height:100%; margin:0 auto; position:relative;}
 .slide {position:absolute; width:100%;}
 .slide > div {width:100%; max-width:1200px; margin:0 auto;}
-.skills > div> p{color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
-.skill > div > li{width:20%; float:left; text-align: center;}
-.skill > div .skill-cir{width:150px; height:150px; background-color:#fff; border-radius: 50%; margin:auto;}
-.skill > div > li > span {color:#fff; display:block; font-size:1.5rem; margin-top:1rem; font-weight: 400;}
-.skill > div > li:first-child >:last-child {margin-top:0;}
+.skills > div > p{color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
+.skill > li{width:20%; float:left; text-align: center;}
+.skill > li > .skill-cir{width:150px; height:150px; background-color:#fff; border-radius: 50%; margin:auto;}
+.skill > li > span {color:#fff; display:block; font-size:1.5rem; margin-top:1rem; font-weight: 400;}
+.skill > li:first-child >:last-child {margin-top:0;}
 
 /* introduce */
 
 .who > div > p{color:#fff; text-align: center;  font-size:2.14rem;  margin:0 auto 6rem; padding-top:1rem;}
-.who > div > div {width:47%; height:50%; float:left;}
-.who > div > ldivi:nth-child(2){margin-right:6%; padding-left:4rem;}
-.who > div > div > .photo-me{ margin:0 auto; background-color:#999; width:50%; height:90%; color:#fff;}
+.who > div{width:100%; height:100%;}
+.who > div > div {width:49%; height:100%; float:left;}
+.who > div > div:nth-child(2){}
+.who > div > div > .photo-me{ margin:0 auto; background-color:#999; color:#fff;}
 .who > div > div > div > span{display:block; color:#fff; font-size:1.25rem; margin-bottom:1rem;}
 .who > div > div > div > span a{color:#fff;}
-.who > div > ldivi > div > span a:hover{color:#225f2f; transition:1s ease;}
+.who > div > div > div > span a:hover{color:#225f2f; transition:1s ease;}
 .int-table{padding-left:2rem;}
+.photo{width:50%; height:400px; background-color:#999; float:left;}
+.introduce{width:50%; height:100%; background-color:#555;}
 
 /* strength */
 
 .strength {}
-.strength > p {color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
+.strength > div > p {color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
 .str{max-width:1200px; width:100%;}
-.str > div > li{width:20%; float:left; text-align: center;}
-.str > div > li > img{width:70%; margin:0 auto; margin-bottom:2rem;}
-.str > div > li > span{color:#fff; font-size:1.25rem; display:block; font-weight: 400;}
-.str > div > li:nth-child(4) > span{padding-left:0.75rem;}
+.str >li{width:20%; float:left; text-align: center;}
+.str > li > img{width:70%; margin:0 auto; margin-bottom:2rem;}
+.str >li > span{color:#fff; font-size:1.25rem; display:block; font-weight: 400;}
+.str >li:nth-child(4) > span{padding-left:0.75rem;}
 
 
 /* slide-circle */

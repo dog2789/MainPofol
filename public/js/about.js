@@ -259,7 +259,7 @@ var banner = new Slide($(".black-table"), {
 	//normal/pingpong/infinite/vertical/fade->normal
 	type: "infinite",
 	//애니메이션 장면전환 대기 속도->2000
-	delay: 3000,
+	delay: 100000,
 	//애니메이션 속도->300
 	speed: 600,
 	//Hover 했을때 true면 멈춤->true
