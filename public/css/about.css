@@ -29,12 +29,13 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 .who{width:800px; height:100%; margin:0 auto; display:none; }
 .who > p{color:#fff; text-align: center;  font-size:2.14rem;  margin:0 auto 6rem; padding-top:1rem;}
-.who > li {width:46%; height:50%; float:left;}
-.who > li:nth-child(2){margin-right:8%;}
+.who > li {width:47%; height:50%; float:left;}
+.who > li:nth-child(2){margin-right:6%; padding-left:4rem;}
 .who > li > .photo-me{ margin:0 auto; background-color:#999; width:50%; height:90%; color:#fff;}
 .who > li > div > span{display:block; color:#fff; font-size:1.25rem; margin-bottom:1rem;}
 .who > li > div > span a{color:#fff;}
 .who > li > div > span a:hover{color:#225f2f; transition:1s ease;}
+.int-table{padding-left:2rem;}
 
 /* strength */
 
