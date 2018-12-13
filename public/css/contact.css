@@ -13,9 +13,22 @@
 .ct-contact{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
     font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
-.contact-main{width:100%; height:800px; border:1px solid #000;}
+.contact-main{width:100%; height:800px; }
 .contact-main > ul > li{width:48%; height:100%; float:left; margin-right:4%;}
 .contact-main > ul > li:last-child{margin-right:0;}
 .contact-main > ul{width:100%; height:100%;}
+
+.contact-me{}
+.contact-box{padding:2.5rem 1rem;}
+.cont_form{}
+.cont_form > *{width:95%; margin-bottom:4rem; padding-left:2rem; height:60px; color:#666; font-size:1.25rem;}
+.cont_form > :nth-child(5){height:200px; padding-top:1rem;}
+.cont_form > :last-child{width:13%; color:#333; padding:0; text-align:center; height:30px; background-color:transparent; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; border:none; box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
+.cont_form > :last-child:hover{background-color:#225f2f; color:#fff;}
+.contact-box > p{text-align: right; width:95%; font-size:1.25rem; color:#111;}
+.contact-box > p > span{display:block;}
+.contact-box > p > span:first-child{margin-bottom:1rem;}
+.contact-box > p > span:first-child > i{margin-right:1.25rem;}
+.contact-box > p > span:last-child > i {margin-right:0.25rem;}
 
 .section{width:100%; height:100%;}
