@@ -41,10 +41,10 @@
 
 @keyframes iconAni{
     0%{width:0%;}
-    100%{width:60%;}
+    100%{width:55%;}
 }
 @keyframes iconbackAni{
-    0%{width:60%;}
+    0%{width:55%;}
     100%{width:00%;}
 }
 

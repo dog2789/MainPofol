@@ -1,3 +1,13 @@
+/***** Main *****/
+
+$(".sec-main-tit > li").each(function(i){
+	$(this).stop().delay(i*200).animate({"left":0, "opacity":1}, 1500);
+});
+
+$(".sec-sub-tit > li").each(function(i){
+	$(this).stop().delay(i*200).animate({"left":0, "opacity":1}, 1500);
+});
+
 /***** View *****/
 
 $(".view").click(function(){
@@ -11,3 +21,4 @@ $(".my-works li").hover(function(){
 }, function(){
     $(this).children("div").stop().animate({"bottom":"-340px"}, 500);
 });  
+

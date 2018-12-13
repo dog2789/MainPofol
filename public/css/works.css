@@ -1,9 +1,12 @@
 /***** Section *****/
 
 .sec-tit{margin-top:1rem;}
-.sec-tit > span{font-size:3rem; font-weight:700; display:block; letter-spacing:-0.1rem; line-height:2.5rem; padding:0.25rem 0;}
-.sec-sub-tit{margin-top:1rem;}
-.sec-sub-tit > span{display:block; color:#666; letter-spacing: 0.125rem; font-weight: 500;}
+.sec-main-tit{overflow: hidden;}
+.sec-main-tit > li{position: relative; left:-1000px; opacity:0;}
+.sec-main-tit > li > span{left:0; font-size:3rem; font-weight:700; display:block; letter-spacing:-0.1rem; line-height:2.5rem; padding:0.25rem 0;}
+.sec-sub-tit{margin-top:1rem; overflow: hidden;}
+.sec-sub-tit > li{ position: relative; left:-1000px; opacity: 0;}
+.sec-sub-tit > li > span{display:block; color:#666; letter-spacing: 0.125rem; font-weight: 500;}
 
 /*** Works ***/
 

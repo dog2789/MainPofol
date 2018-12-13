@@ -241,7 +241,7 @@ var Slide = (function(){
 			//현재창 링크는 location.href = "링크주소"
 			if(obj.option.target == "_self") location.href = $(this).data("link");
 			//새창 링크는 window.open("링크주소", "_blank")
-			else window.open($(this).data("link"), obj.option.target);	
+			else $(this).data("link"), obj.option.target;	
 		});
 	};
 	//Utils
@@ -259,7 +259,7 @@ var banner = new Slide($(".black-table"), {
 	//normal/pingpong/infinite/vertical/fade->normal
 	type: "infinite",
 	//애니메이션 장면전환 대기 속도->2000
-	delay: 100000,
+	delay: 5000,
 	//애니메이션 속도->300
 	speed: 600,
 	//Hover 했을때 true면 멈춤->true
@@ -279,7 +279,7 @@ var banner = new Slide($(".black-table"), {
 	//pager 기본 색상(심볼선택시 텍스트 컬러/심볼 미사용시 바탕컬러)->w3-white
 	pagerDefClass: "w3-text-white",
 	//선택된 pager 색상->w3-red
-	pagerActClass: "w3-text-blue"
+	pagerActClass: "cir-wh"
 });
 
 
@@ -319,4 +319,81 @@ $(".ban-tit").each(function(i){
 */
 $(".ban-tit").each(function(i){
     $(this).stop().delay(i*200).animate({"top":"88%", "opacity":1}, 2000);
+});
+
+var data = [{
+	datasets: [{
+			data: [z],
+			backgroundColor: [
+				'rgba(255, 99, 132, 0.5)'
+			],
+			hoverBackgroundColor:[
+				'rgba(255, 0, 0, 1)'
+			]
+	}]
+},{
+	labels: ["Red", "Blue", "Yellow"],
+	datasets: [{
+			data: [12, 19, 3],
+			backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)'
+			],
+			borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+			],
+			borderWidth: 1
+	}]
+},{
+	labels: ["Red", "Blue", "Yellow"],
+	datasets: [{
+			data: [12, 19, 3],
+			backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)'
+			],
+			borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+			],
+			borderWidth: 1
+	}]
+}];
+var option = [{
+	tooltips : {
+		enabled: false
+	},
+	cutoutPercentage: 30,
+	rotation: -0.5 * Math.PI,
+	circumference: 1.4 * Math.PI,
+	animation: {
+		animateRotate: true,
+		animateScale: true
+	}
+},{
+	legend: {
+		display: false
+	}
+},{
+	title: {
+		display: true,
+		text: 'Custom Chart Title',
+		fontSize: 24,
+		fontColor: "#f00"
+	}
+}];
+var chart = [];
+
+var ctx = $(".chart");
+ctx.each(function(i){
+	chart[i] = new Chart($(this), {
+		type: 'doughnut',
+		data: data[i],
+		options: option[i]
+	});
 });

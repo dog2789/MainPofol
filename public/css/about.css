@@ -15,6 +15,7 @@
 font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 /* skills */
+
 .black-back{width:100%; margin:0 auto; height:500px; background-color:#000; position: relative;}
 .black-table{width:100%; height:100%; margin:0 auto; position:relative;}
 .slide {position:absolute; width:100%;}
@@ -25,24 +26,27 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .skill > li > span {color:#fff; display:block; font-size:1.5rem; margin-top:1rem; font-weight: 400;}
 .skill > li:first-child >:last-child {margin-top:0;}
 
+.chart_wrap {width:100%; border:1px solid #ccc; border-radius: 50%;}
+
 /* introduce */
 
-.who > div > p{color:#fff; text-align: center;  font-size:2.14rem;  margin:0 auto 6rem; padding-top:1rem;}
-.who > div{width:100%; height:100%;}
+.who > div > p{color:#fff; text-align: center;  font-size:2.14rem;  margin:0 auto 5rem; padding-top:1rem;}
+.who > div{width:80%; height:100%;}
 .who > div > div {width:49%; height:100%; float:left;}
 .who > div > div:nth-child(2){}
 .who > div > div > .photo-me{ margin:0 auto; background-color:#999; color:#fff;}
 .who > div > div > div > span{display:block; color:#fff; font-size:1.25rem; margin-bottom:1rem;}
 .who > div > div > div > span a{color:#fff;}
-.who > div > div > div > span a:hover{color:#225f2f; transition:1s ease;}
-.int-table{padding-left:2rem;}
+.who > div > div > div > span a:hover{color:#666; transition:1s ease; -webkit-transition:1s ease;  -moz-transition:1s ease;
+    -o-transition:1s ease;}
+.int-table{padding-left:6rem;}
 .photo{width:50%; height:400px; background-color:#999; float:left;}
-.introduce{width:50%; height:100%; background-color:#555;}
+.introduce{width:50%; height:100%;}
 
 /* strength */
 
 .strength {}
-.strength > div > p {color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
+.strength > div > p {color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 5rem; padding-top:1rem;}
 .str{max-width:1200px; width:100%;}
 .str >li{width:20%; float:left; text-align: center;}
 .str > li > img{width:70%; margin:0 auto; margin-bottom:2rem;}
@@ -51,12 +55,9 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 
 /* slide-circle */
-.slide-cir{position: absolute; bottom:5%; left:50%; width:100px; margin:0 auto; -webkit-transform:translate(-50%, -5%);
-    -moz-transform:translate(-50%, -5%); -o-transform:translate(-50%, -5%); transform:translate(-50%, -5%);}
-.slide-cir li{width:33.3%; float:left;}
-.slide-cir li div{width:20px; height:20px; border-radius: 50%; margin:auto; box-sizing:border-box; cursor: pointer; border:1px solid #fff;}
-.cir-ba{background-color:#fff;}
-.circle{background-color:#fff;}
+
+.w3-bar-item{font-size:2.5rem;}
+.cir-wh{color:#225f2f;}
 
 
 
