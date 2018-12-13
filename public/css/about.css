@@ -26,7 +26,8 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .skill > li > span {color:#fff; display:block; font-size:1.5rem; margin-top:1rem; font-weight: 400;}
 .skill > li:first-child >:last-child {margin-top:0;}
 
-.chart_wrap {width:100%; border:1px solid #ccc; border-radius: 50%;}
+.chart_wrap {width:100%; height:100%; border-radius: 50%;}
+.fa-circle{font-size:1.25rem;}
 
 /* introduce */
 
@@ -54,10 +55,7 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .str >li:nth-child(4) > span{padding-left:0.75rem;}
 
 
-/* slide-circle */
 
-.w3-bar-item{font-size:2.5rem;}
-.cir-wh{color:#225f2f;}
 
 
 

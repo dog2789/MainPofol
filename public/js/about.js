@@ -207,10 +207,10 @@ var Slide = (function(){
 	Slide.prototype.pagerInit = function(obj) {
 		//Pager를 감싸는 div.pager_wrap의 style값
 		console.log("pagerInit");
-		var style = 'position:absolute;width:100%;border:1px solid #f00; z-index:9999;'+obj.option.pagerPos+':'+obj.option.pagerVal+';';
+		var style = 'position:absolute; width:100%; z-index:9999;'+obj.option.pagerPos+':'+obj.option.pagerVal+';';
 		var html = '<div class="w3-center pager_wrap" style="'+style+'">';
 		//name으로 pager생성
-		if(obj.nullChk(obj.option.pagerSymbol)) html += '<div class="w3-bar w3-border pager"></div>';
+		if(obj.nullChk(obj.option.pagerSymbol)) html += '<div class="w3-bar pager"></div>';
 		//symbol로 pager생성
 		else html += '<div class="w3-bar pager" style="cursor:pointer;"></div>';
 		html += '</div>';
@@ -279,7 +279,7 @@ var banner = new Slide($(".black-table"), {
 	//normal/pingpong/infinite/vertical/fade->normal
 	type: "infinite",
 	//애니메이션 장면전환 대기 속도->2000
-	delay: 3000,
+	delay: 50000,
 	//애니메이션 속도->300
 	speed: 600,
 	//Hover 했을때 true면 멈춤->true
@@ -343,54 +343,23 @@ $(".ban-tit").each(function(i){
 
 var data = [{
 	datasets: [{
-			data: [100],
+			data: [200],
 			backgroundColor: [
-				'rgba(255, 99, 132, 0.5)'
+				'rgba(255, 0, 0, 1)'
 			],
 			hoverBackgroundColor:[
-				'rgba(255, 0, 0, 1)'
+				'rgba(255, 99, 132, 0.5)'
 			]
 	}]
-},{
-	labels: ["Red", "Blue", "Yellow"],
-	datasets: [{
-			data: [12, 19, 3],
-			backgroundColor: [
-					'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)'
-			],
-			borderColor: [
-					'rgba(255,99,132,1)',
-					'rgba(54, 162, 235, 1)',
-					'rgba(255, 206, 86, 1)'
-			],
-			borderWidth: 1
-	}]
-},{
-	labels: ["Red", "Blue", "Yellow"],
-	datasets: [{
-			data: [12, 19, 3],
-			backgroundColor: [
-					'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)'
-			],
-			borderColor: [
-					'rgba(255,99,132,1)',
-					'rgba(54, 162, 235, 1)',
-					'rgba(255, 206, 86, 1)'
-			],
-			borderWidth: 1
-	}]
 }];
+
 var option = [{
 	tooltips : {
 		enabled: false
 	},
-	cutoutPercentage: 30,
+	cutoutPercentage: 50,
 	rotation: -0.5 * Math.PI,
-	circumference: 1.4 * Math.PI,
+	circumference: 1.2 * Math.PI,
 	animation: {
 		animateRotate: true,
 		animateScale: true
