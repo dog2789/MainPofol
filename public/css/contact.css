@@ -1,0 +1,21 @@
+/***** Section *****/
+
+.sec-tit{margin-top:1rem;}
+.sec-main-tit{overflow: hidden;}
+.sec-main-tit > li{position: relative; left:-1000px; opacity:0;}
+.sec-main-tit > li > span{left:0; font-size:3rem; font-weight:700; display:block; letter-spacing:-0.1rem; line-height:2.5rem; padding:0.25rem 0;}
+.sec-sub-tit{margin-top:1rem; overflow: hidden;}
+.sec-sub-tit > li{ position: relative; left:-1000px; opacity: 0;}
+.sec-sub-tit > li > span{display:block; color:#666; letter-spacing: 0.125rem; font-weight: 500;}
+
+/*** Contact ***/
+
+.ct-contact{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
+    font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
+
+.contact-main{width:100%; height:800px; border:1px solid #000;}
+.contact-main > ul > li{width:48%; height:100%; float:left; margin-right:4%;}
+.contact-main > ul > li:last-child{margin-right:0;}
+.contact-main > ul{width:100%; height:100%;}
+
+.section{width:100%; height:100%;}

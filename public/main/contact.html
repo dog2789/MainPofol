@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico" />
+    <title>Hi I am WooJae :)</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="/__/firebase/5.5.9/firebase-app.js"></script>
+    <script src="/__/firebase/5.5.9/firebase-auth.js"></script>
+    <script src="/__/firebase/5.5.9/firebase-database.js"></script>
+    <script src="/__/firebase/5.5.9/firebase-messaging.js"></script>
+    <script src="/__/firebase/5.5.9/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+</head>
+
+<body>
+    <div class="toggle">
+        <div class="tog-out">
+            <div class="tog-in">
+                <a href="about.html" class="about"><span>About<div class="sm-bar1"></div></span></a>
+                <a href="works.html"  class="works"><span>Works<div class="sm-bar2"></div></span></a>                
+                <a href="contact.html" class="contact"><span>Contact<div class="sm-bar3"></div></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="index">
+        <div class="head clear cont">
+            <div>
+                <a href="index.html" class="logo">
+                <img src="../icon/logo3.png" class="img" alt="logo">
+                </a>
+                <div class="menu_bar" id="toggle">
+                <div class="ham"></div>
+                <div class="ham"></div>
+                <div class="ham"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sec-tit cont">
+            <ul class="sec-main-tit">
+                <li>
+                    <span>BE</span>
+                </li>
+                <li>
+                    <span>CREATIVE</span>
+                </li>           
+                <li>
+                    <span>PUBLISHER</span>
+                </li> 
+            </ul>
+            <ul class="sec-sub-tit">
+                <li>
+                    <span>I always work hard for desgin</span>
+                </li>
+                <li>
+                    <span>Coding makes me motivative</span>         
+                </li>
+            </ul>
+            <div class="content cont">
+            <div class="ct-contact">CONTACT</div>
+            <div class="contact-main clear">
+                    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=zkq7DNYpouDGi6BzbMBa&submodules=geocoder"></script>
+                <ul class="clear">
+                    <li class="map">
+                        <div class="section" id="maps">
+                                <script>
+                                        var map = new naver.maps.Map('maps');
+                                        var myaddress = '목동중앙북로7가길 61';// 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
+                                        naver.maps.Service.geocode({address: myaddress}, function(status, response) {
+                                            if (status !== naver.maps.Service.Status.OK) {
+                                                return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
+                                            }
+                                            var result = response.result;
+                                            // 검색 결과 갯수: result.total
+                                            // 첫번째 결과 결과 주소: result.items[0].address
+                                            // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
+                                            var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
+                                            map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+                                            // 마커 표시
+                                            var marker = new naver.maps.Marker({
+                                            position: myaddr,
+                                            map: map
+                                            });
+                                            // 마커 클릭 이벤트 처리
+                                            naver.maps.Event.addListener(marker, "click", function(e) {
+                                            if (infowindow.getMap()) {
+                                                infowindow.close();
+                                            } else {
+                                                infowindow.open(map, marker);
+                                            }
+                                            });
+                                            // 마크 클릭시 인포윈도우 오픈
+                                            var infowindow = new naver.maps.InfoWindow({
+                                                content: '<h4> [네이버 개발자센터]</h4><a href="https://developers.naver.com" target="_blank"><img src="https://developers.naver.com/inc/devcenter/images/nd_img.png"></a>'
+                                            });
+                                        });
+                                    </script>
+                        </div>
+                    </li>
+                    <li class="contact-me">
+                        
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        </div>
+        
+    </div>
+    <div class="bot cont">
+            <div class="bottom clear">
+                <div>
+                    <div class="bot-txt">
+                        <span>Web Publisher</span>
+                        <span>Jung Woo Jae</span>
+                    </div>
+                    <div class="bot-icon">
+                        <a href="#"><i class="fab fa-facebook-square"></i><div></div></a>
+                        <a href="#"><i class="fab fa-instagram"></i><div></div></a>
+                        <a href="#"><i class="fab fa-pinterest-square"></i><div></div></a>
+                        <a href="#"><i class="fas fa-envelope-square"></i><div></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="../js/common.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

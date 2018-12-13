@@ -1,0 +1,24 @@
+[debug] [2018-12-13T03:03:12.610Z] ----------------------------------------------------------------------
+[debug] [2018-12-13T03:03:12.621Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-13T03:03:12.621Z] CLI Version:   4.2.1
+[debug] [2018-12-13T03:03:12.621Z] Platform:      win32
+[debug] [2018-12-13T03:03:12.622Z] Node Version:  v8.12.0
+[debug] [2018-12-13T03:03:12.626Z] Time:          Thu Dec 13 2018 12:03:12 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-13T03:03:12.626Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-13T03:03:12.673Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-13T03:03:12.675Z] > authorizing via signed-in user
+[debug] [2018-12-13T03:03:12.683Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dog2789-pofol  
+ 
+[debug] [2018-12-13T03:03:14.280Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-13T03:03:14.287Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dog2789-pofol  
+ 
+[debug] [2018-12-13T03:03:15.490Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\portfolio'...
+[info] 
+[debug] [2018-12-13T03:03:15.512Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/654329667940/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-13T03:03:16.285Z] <<< HTTP RESPONSE 200
+[info] i  hosting[dog2789-pofol]: Serving hosting files from: public
+[info] +  hosting[dog2789-pofol]: Local server: http://localhost:5000
