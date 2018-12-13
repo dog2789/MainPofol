@@ -87,8 +87,19 @@ var Slide = (function(){
 		function ani(obj) {
 			//Pager의 현재 위치를 나타내는 구문
 			if(obj.option.pager) {
-				$(obj.pager).find("span").removeClass(obj.option.pagerActClass).addClass(obj.option.pagerDefClass);
-				$(obj.pager).find("span").eq(obj.now).removeClass(obj.option.pagerDefClass).addClass(obj.option.pagerActClass);
+				$(obj.pager).find("span").removeClass("far").addClass("fas");
+				$(obj.pager).find("span").eq(obj.now).removeClass("fas").addClass("far");
+				/*
+				if(obj.nullChk(obj.option.pagerSymbol)) {
+					console.log("pager");
+					$(obj.pager).find("span").removeClass("far").addClass("fas");
+					$(obj.pager).find("span").eq(obj.now).removeClass("fas").addClass("far");
+				}
+				else {
+					$(obj.pager).find("span").removeClass(obj.option.pagerActClass).addClass(obj.option.pagerDefClass);
+					$(obj.pager).find("span").eq(obj.now).removeClass(obj.option.pagerDefClass).addClass(obj.option.pagerActClass);
+				}
+				*/
 			}
 			//애니메이션 구문
 			$(obj.slides).stop().animate({"left":-(100*obj.now)+"%"}, obj.option.speed, function(){
@@ -112,9 +123,9 @@ var Slide = (function(){
 		obj.interval = setInterval(ani, obj.option.delay, obj);
 		function ani(obj) {
 			if(obj.option.pager) {
-				$(obj.pager).find("span").removeClass(obj.option.pagerActClass).addClass(obj.option.pagerDefClass);
-				if(obj.now == obj.cnt - 1) $(obj.pager).find("span").eq(0).removeClass(obj.option.pagerDefClass).addClass(obj.option.pagerActClass);
-				else $(obj.pager).find("span").eq(obj.now).removeClass(obj.option.pagerDefClass).addClass(obj.option.pagerActClass);
+				$(obj.pager).find("span").removeClass("fas").addClass("far");
+				if(obj.now == obj.cnt - 1) $(obj.pager).find("span").eq(0).removeClass("far").addClass("fas");
+				else $(obj.pager).find("span").eq(obj.now).removeClass("far").addClass("fas");
 			}
 			$(obj.slides).stop().animate({"left":-(obj.now*100)+"%"}, obj.option.speed, function(){
 				if(obj.now == obj.cnt - 1) {
@@ -195,7 +206,8 @@ var Slide = (function(){
 	//Slide.prototype.method = function(){} <- Slide객체의 함수(메서드)를 선언
 	Slide.prototype.pagerInit = function(obj) {
 		//Pager를 감싸는 div.pager_wrap의 style값
-		var style = 'position:absolute;width:100%;z-index:9999;'+obj.option.pagerPos+':'+obj.option.pagerVal+';';
+		console.log("pagerInit");
+		var style = 'position:absolute;width:100%;border:1px solid #f00; z-index:9999;'+obj.option.pagerPos+':'+obj.option.pagerVal+';';
 		var html = '<div class="w3-center pager_wrap" style="'+style+'">';
 		//name으로 pager생성
 		if(obj.nullChk(obj.option.pagerSymbol)) html += '<div class="w3-bar w3-border pager"></div>';
@@ -208,9 +220,17 @@ var Slide = (function(){
 		//Pager의 내용을 생성
 		for(var i=0; i<obj.cnt; i++) {
 			name = $(obj.slide[i]).data("name"); //li의 속성(attribute)중 data-name 값
-			if(obj.nullChk(obj.option.pagerSymbol)) pagerHtml = '<span class="w3-bar-item w3-button '+obj.option.pagerDefClass+'">'+name+'</span>';
+			if(obj.nullChk(obj.option.pagerSymbol)) pagerHtml = '<span class="fas fa-circle" style="padding:0.5em; color:#fff;"></span>';
 			else pagerHtml = '<span class="w3-bar-item">'+obj.option.pagerSymbol+'</span>'; 
 			$(obj.pager).find(".pager").append(pagerHtml);
+		}
+		if(obj.nullChk(obj.option.pagerSymbol)) {
+			$(obj.pager).find("span").removeClass("fas").addClass("far");
+			$(obj.pager).find("span").eq(0).removeClass("far").addClass("fas");
+		}
+		else {
+			$(obj.pager).find("span").removeClass(obj.option.pagerActClass).addClass(obj.option.pagerDefClass);
+			$(obj.pager).find("span").eq(0).removeClass(obj.option.pagerDefClass).addClass(obj.option.pagerActClass);
 		}
 	};
 	//HoverInit
@@ -259,7 +279,7 @@ var banner = new Slide($(".black-table"), {
 	//normal/pingpong/infinite/vertical/fade->normal
 	type: "infinite",
 	//애니메이션 장면전환 대기 속도->2000
-	delay: 5000,
+	delay: 3000,
 	//애니메이션 속도->300
 	speed: 600,
 	//Hover 했을때 true면 멈춤->true
@@ -275,7 +295,7 @@ var banner = new Slide($(".black-table"), {
 	//pager 기준위치로 부터의 값->0px
 	pagerVal: "0px",
 	//pager 심볼사용 여부(제목으로 사용시 기재 안함)->null
-	pagerSymbol: "●",
+	//pagerSymbol: "●",
 	//pager 기본 색상(심볼선택시 텍스트 컬러/심볼 미사용시 바탕컬러)->w3-white
 	pagerDefClass: "w3-text-white",
 	//선택된 pager 색상->w3-red
@@ -323,7 +343,7 @@ $(".ban-tit").each(function(i){
 
 var data = [{
 	datasets: [{
-			data: [z],
+			data: [100],
 			backgroundColor: [
 				'rgba(255, 99, 132, 0.5)'
 			],
