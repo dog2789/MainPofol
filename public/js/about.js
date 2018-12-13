@@ -343,7 +343,7 @@ $(".ban-tit").each(function(i){
 
 var data = [{
 	datasets: [{
-			data: [200],
+			data: [100],
 			backgroundColor: [
 				'rgba(255, 0, 0, 1)'
 			],
@@ -366,14 +366,7 @@ var option = [{
 	}
 },{
 	legend: {
-		display: false
-	}
-},{
-	title: {
-		display: true,
-		text: 'Custom Chart Title',
-		fontSize: 24,
-		fontColor: "#f00"
+		display: true
 	}
 }];
 var chart = [];

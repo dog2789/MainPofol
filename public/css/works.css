@@ -29,5 +29,5 @@
 .my-works > li:last-child > .ma-hov{background-color:#8c8a89;}
 
 
-.view{color:#666; width:5%; margin:auto; text-align: center; margin-top:4rem; cursor: pointer; transition:all 0.5s ease; -webkit-transition:all 0.5s ease; -moz-transition:all 0.5s ease; -o-transition:all 0.5s ease;}
+.view{color:#666; width:5%; margin:auto; text-align: center; margin-top:4rem; cursor: pointer; transition:all 0.5s ease; -webkit-transition:all 0.5s ease; -moz-transition:all 0.5s ease; -o-transition:all 0.5s ease; font-size:1.125rem;}
 .view:hover{color:#000; text-decoration: underline #225f2f;}

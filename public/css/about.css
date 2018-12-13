@@ -34,7 +34,6 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .who > div > p{color:#fff; text-align: center;  font-size:2.14rem;  margin:0 auto 5rem; padding-top:1rem;}
 .who > div{width:80%; height:100%;}
 .who > div > div {width:49%; height:100%; float:left;}
-.who > div > div:nth-child(2){}
 .who > div > div > .photo-me{ margin:0 auto; background-color:#999; color:#fff;}
 .who > div > div > div > span{display:block; color:#fff; font-size:1.25rem; margin-bottom:1rem;}
 .who > div > div > div > span a{color:#fff;}
