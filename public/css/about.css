@@ -22,11 +22,13 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .slide > div {width:100%; max-width:1200px; margin:0 auto;}
 .skills > div > p{color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
 .skill > li{width:20%; float:left; text-align: center;}
-.skill > li > .skill-cir{width:150px; height:150px; background-color:#fff; border-radius: 50%; margin:auto;}
+.skill > li  .skill_wrap {width:150px; height:150px; border:1px solid #f00; position:relative; overflow:hidden; background-color:#fff; border-radius:50%;}
+.skill > li  .skill-cir {width:300px; background-color:#fff; margin:auto; margin-left: -64px; margin-top:-6px;}
 .skill > li > span {color:#fff; display:block; font-size:1.5rem; margin-top:1rem; font-weight: 400;}
 .skill > li:first-child >:last-child {margin-top:0;}
 
-.chart_wrap {width:100%; height:100%; border-radius: 50%;}
+.chart_wrap {width:100%; height:100%;}
+.chart {transform:rotateY(180deg)}
 .fa-circle{font-size:1.25rem; cursor: pointer;}
 
 /* introduce */

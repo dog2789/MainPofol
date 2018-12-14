@@ -363,7 +363,8 @@ var option = [{
 	animation: {
 		animateRotate: true,
 		animateScale: true
-	}
+	},
+	responsive: true
 },{
 	legend: {
 		display: true
