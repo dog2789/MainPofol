@@ -343,7 +343,7 @@ $(".ban-tit").each(function(i){
 
 var data = [{
 	datasets: [{
-			data: [100],
+			data: [1],
 			backgroundColor: [
 				'rgba(255, 0, 0, 1)'
 			],
@@ -359,7 +359,7 @@ var option = [{
 	},
 	cutoutPercentage: 50,
 	rotation: -0.5 * Math.PI,
-	circumference: 1.2 * Math.PI,
+	circumference: 1.4 * Math.PI,
 	animation: {
 		animateRotate: true,
 		animateScale: true
