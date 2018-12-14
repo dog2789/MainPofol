@@ -86,3 +86,152 @@
     100%{width:0;}
 }
 
+@media screen and (max-width:1280px){
+    .logo{width:15%; padding-left:3rem;}
+    .menu_bar > .ham {width:40px; height:3px; }
+    .menu_bar{padding-right:3rem;}
+
+    .bot-txt{padding-left:3rem;}
+    .bot-icon{padding-top:0.9rem; padding-right:3rem;}
+
+    .toggle{height:27%;}
+    .tog-in a{font-size:2.25rem; padding-left:3rem;}
+    @keyframes smbarAni1 {
+        0%{width:0;}
+        100%{width:110px;}
+    }
+    @keyframes smbarbackAni1 {
+        0%{width:110px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni2 {
+        0%{width:0;}
+        100%{width:110px;}
+    }
+    @keyframes smbarbackAni2 {
+        0%{width:110px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni3 {
+        0%{width:0;}
+        100%{width:140px;}
+    }
+    @keyframes smbarbackAni3 {
+        0%{width:140px;}
+        100%{width:0;}
+    }
+}
+
+@media screen and (max-width:992px){
+    .logo{width:20%; padding-left:2rem;}
+    .menu_bar > .ham {width:40px; height:3px; }
+    .menu_bar{padding-right:2rem;}
+    .head {height:12%;}
+
+    .bot {width:100%; height:12%; display:table;}
+    .bot-txt{padding-left:2rem;}
+    .bot-icon{padding-top:0.9rem; padding-right:2rem;}
+
+    .toggle{height:25%;}
+    .tog-in a{font-size:2.125rem; padding-left:2rem;}
+    @keyframes smbarAni1 {
+        0%{width:0;}
+        100%{width:105px;}
+    }
+    @keyframes smbarbackAni1 {
+        0%{width:105px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni2 {
+        0%{width:0;}
+        100%{width:105px;}
+    }
+    @keyframes smbarbackAni2 {
+        0%{width:105px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni3 {
+        0%{width:0;}
+        100%{width:135px;}
+    }
+    @keyframes smbarbackAni3 {
+        0%{width:135px;}
+        100%{width:0;}
+    }
+}
+
+@media screen and (max-width:768px){
+    .logo{width:25%; padding-left:2rem;}
+    .menu_bar > .ham {width:40px; height:3px; }
+    .menu_bar{padding-right:2rem;}
+    .head {height:10%;}
+
+    .bot {width:100%; height:10%; display:table;}
+    .bot-txt{padding-left:2rem;}
+    .bot-icon{padding-top:0.9rem; padding-right:2rem;}
+
+    .toggle{height:25%;}
+    .tog-in a{font-size:2.125rem; padding-left:2rem;}
+    @keyframes smbarAni1 {
+        0%{width:0;}
+        100%{width:105px;}
+    }
+    @keyframes smbarbackAni1 {
+        0%{width:105px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni2 {
+        0%{width:0;}
+        100%{width:105px;}
+    }
+    @keyframes smbarbackAni2 {
+        0%{width:105px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni3 {
+        0%{width:0;}
+        100%{width:135px;}
+    }
+    @keyframes smbarbackAni3 {
+        0%{width:135px;}
+        100%{width:0;}
+    }
+}
+
+@media screen and (max-width:480px){
+    .logo{width:35%; padding-left:1rem;}
+    .menu_bar > .ham {width:40px; height:3px; }
+    .menu_bar{padding-right:1rem;}
+    .head {height:10%;}
+
+    .bot {width:100%; height:10%; display:table;}
+    .bot-txt{padding-left:1rem;}
+    .bot-icon{padding-top:0.9rem; padding-right:1rem;}
+
+    .toggle{height:20%;}
+    .tog-in a{font-size:2rem; padding-left:1rem;}
+    @keyframes smbarAni1 {
+        0%{width:0;}
+        100%{width:100px;}
+    }
+    @keyframes smbarbackAni1 {
+        0%{width:100px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni2 {
+        0%{width:0;}
+        100%{width:100px;}
+    }
+    @keyframes smbarbackAni2 {
+        0%{width:100px;}
+        100%{width:0;}
+    }
+    @keyframes smbarAni3 {
+        0%{width:0;}
+        100%{width:130px;}
+    }
+    @keyframes smbarbackAni3 {
+        0%{width:130px;}
+        100%{width:0;}
+    }
+}
