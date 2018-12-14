@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="Keywords" content="웹표준, html5, 반응형웹" />
+<meta name="description" content="검색에서 노출되는 설명부분입니다." />
+<meta name="author" content="사이트주소를 적는 부분입니다." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
+<title>iloveweb</title>
+<link rel="stylesheet" href="assets/css/reset.css" />
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
+<style>
+body{font-family: 'Nanum Gothic', sans-serif;}
+.eng{font-family: 'Montserrat', sans-serif;}
+.kr{font-weight:100;font-family: 'Nanum Pen Script', cursive;font-size:1.5rem; color:#fff;}
+h1,h2,h3,h4,h5,h6{font-weight:100; font-style:normal;}
+.row{width:100%;}
+/*header style*/
+.header{} 
+.top-banner{
+                        /*
+                            이미지태그가 아니고 배경이미지로 선택한 이유는...
+                            이미지는 가변크기기 때문에 박스안에 요소도 같이 영향을 받게끔 작업
+                            을 해줘야함. 배경이미지는 상황에 따라서 가변적크기가 아니라 그냥
+                            위치상 가려지게끔 작업이 용이하기 때문에 지금은 배경이미지로 선택.
+                        */
+                        background-image:url("assets/images/naver_shopping_banner_bg.jpg");
+                        background-repeat:no-repeat;
+                        width:100%;
+                        text-align:center;
+                        padding:1rem 0;/*부모요소한테 높이대용으로 적용된 여백값.*/
+}
+.top-banner p{font-size:2rem;}
+.top-main{background-color:#00b7ff; overflow:hidden; padding:1rem 0;}
+label, input[type=checkbox]{display:none;}
+.top-main .logo{float:left; margin-left:7rem;}
+.top-main .logo img{max-width:80%;}
+.nav{float:right; width:auto; margin-right:7rem;}
+.nav li{display:inline-block;}
+.nav li a{padding:1.15625rem 1rem; color:#fff;}
+.mainbanner{background-color:#00b7ff; padding-top:4rem;}
+.md-title{display:none;}
+.banner{position:relative;}
+.banner > img{margin:auto; max-width:100%;}
+.s-ban, .right-ban{position:absolute; top:5rem;}
+.s-ban{left:10rem;}
+.s-ban img{margin-bottom:1.5rem;}
+.s-ban p{color:#fff;}
+.right-ban{right:7rem;}
+.pro-design{background-color:#fff; padding:5rem 0; text-align:center;}
+/*본문에 타이틀 공통 선택자 스타일*/
+.title{font-size:1.7rem; color:#333; font-weight:bold; line-height:2.3rem; margin-bottom:1.5rem;}
+.title span{display:block;}
+.subtitle{font-size:1.3rem; color:#666; margin-bottom:5rem;}
+.pro-list{width:70%; margin:auto; overflow:hidden;}
+.pro-list li{width:33.3333333333333%; float:left;}
+.pro-list li img{max-width:40%; margin:0 auto 1.5rem;}
+.pro-list li h4{font-size:1.2rem; color:#333; font-weight:bold; margin-bottom:1rem;}
+.pro-list li p{color:#666; line-height:1.5rem; /*span이 블럭이 되기 때문에 미리 행간에 높이를 지정해줌.줄바꿈이
+                   일어나면 현재 행간에 높이가 자동 적용됨.
+               */}
+.pro-list li p span{display:block;}
+
+.web-pc{background-color:#ededed; padding:5rem 0 0; text-align:center;}
+.pc{width:50%; margin:auto;}
+.pc img{max-width:100%;}
+
+
+
+
+
+.web-design{position:relative;}
+.web-design:before{content:""; display:block; padding-top:34%;}
+.web-bg, .web-icon{position:absolute; top:0; width:50%; height:100%;}
+.web-bg{
+                    background-image:url("assets/images/main-sample05-new.jpg");
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                    left:0;
+}
+.web-icon{
+                    right:0;
+                    background-image:url("assets/images/mid-baner-bg02.png");
+                    background-repeat:no-repeat;
+                    background-position:center bottom;
+                    background-size:100%;
+}
+.web-icon h3{
+                        font-size:1.5rem;
+                        color:#333;
+                        font-weight:bold;
+                        line-height:2rem;
+                        margin-bottom:2rem;
+}
+.web-icon h3 span{display:block;}
+.web-outer{display:table; width:100%; height:100%;}
+.web-inner{display:table-cell; vertical-align:middle; text-align:center;}
+.icon-list{
+                        width:94%;
+                        margin:auto;
+                        overflow:hidden;
+}
+.icon-list li{width:20%; float:left; margin-bottom:4rem;}
+.icon-list li.bot-mar{margin-bottom:0;}
+.icon-list li .fa{color:#666; font-size:1.5rem; margin-bottom:1rem;}
+.icon-list li p{color:#666;}
+.app{background-color:#f3f3f3; text-align:center; padding-top:5rem;}
+.app > p span{display:block;}
+.app > p{line-height:1.7rem;}
+.app-img{position:relative;}
+.app-pop, .store{position:absolute; top:3rem;}
+.app-pop{left:14rem; text-align:left;}
+.store{right:14rem;}
+.app-shop{width:50%; margin:auto;}
+.app-shop img{max-width:100%; margin:auto;}
+.app-pop h4{font-size:1.2rem; color:#333; font-weight:bold; margin-bottom:1rem; padding:0.7rem 0 0 3rem;}
+.app-pop hr{margin-bottom:1rem; border-top-color:#d5d5d5; }
+.app-pop p{color:#666; line-height:1.5rem; padding:0 3rem 0.7rem;}
+.app-pop span{display:block;}
+.popup{background-color:#fff; border-radius:0.7rem;}
+.pop-top{margin-bottom:1rem;}
+.store{width:20%;}
+.store p:nth-of-type(1){color:#666; margin-bottom:0.5rem;}
+.store-app{overflow:hidden; background-color:#fff; border-radius:3.125rem; padding:0.5rem 3rem;}
+.store-app img{float:left;}
+.and{ margin-bottom:1rem;}
+.android{padding-top:0.78rem;}
+.google{padding-top:0.78rem;}
+.goog{margin-bottom:1rem;}
+
+.custom{background-color:#1f1f1f; text-align:center; padding:5rem 0;}
+.custom h2{margin-bottom:5rem; color:#999;}
+.cust-list{width:70%; margin:auto; overflow:hidden;}
+.cust-list li{width:33.333333333333333%; float:left;}
+.cust-list li img{margin:auto; max-width:100%;}
+.cust-list li .cust-content{width:95%; margin:auto;}
+.cust-content h4{font-size:1.2rem; color:#666; padding:2rem 0 1rem; font-weight:bold;}
+.cust-content p{color:#999; line-height:1.4rem; margin-bottom:4rem;}
+
+
+
+
+
+
+/*mediaQuery*/
+@media screen and (max-width:1439px){
+.s-ban{left:5rem;}
+.right-ban{right:3rem;}
+.icon-list li{margin-bottom:2rem;}
+.app-pop{left:3rem;}
+.store{right:3rem; width:25%;}
+}
+@media screen and (max-width:1279px){
+html{font-size:93.8%;}
+.s-ban{display:none;}
+.right-ban{display:none;}
+.icon-list li{margin-bottom:1.2rem;}
+.store{right:2rem; width:30%;}
+.app-pop{left:2rem;}
+}
+@media screen and (max-width:959px){
+html{font-size:87.5%;}
+.top-main .logo{margin-left:3rem;}
+.nav{margin-right:3rem;}
+.web-bg{width:30%; background-position-x:-12rem;}
+.web-icon{width:70%;}
+.web-icon h3{margin-bottom:1.5rem;}
+.web-icon h3 span{display:inline;}
+.icon-list li .fa{margin-bottom:0.5rem;}
+.pro-list{width:80%;}
+.store{right:1rem; width:35%;}
+.app-pop{left:1rem;}
+.cust-list{width:80%;}
+}
+@media screen and (max-width:767px){
+html{font-size:87.5%;}
+label{display:block; color:#fff; font-size:2.3rem; float:right; margin:0.5rem 3rem 0 0;}
+.top-main .logo img{max-width:70%;}
+.nav{display:none; float:none; width:100%; margin-right:0; background-color:#fff; margin-top:5rem;}
+.nav li{display:block; text-align:center; border-bottom:1px solid #ededed;}
+.nav li:last-child{border-bottom:0;}
+.nav li a{color:#333;}
+#toggle:checked + .nav{display:block;}
+.md-title{display:block; text-align:center;}
+.md-title h3{font-size:1.5rem; color:#fff; line-height:2rem; margin-bottom:2rem;}
+.md-title span{display:block;}
+.md-title a{
+                        padding:0.8rem 0; 
+                        width:30%; 
+                        text-align:center; 
+                        color:#fff; 
+                        background-color:#000; margin:auto;}
+.banner{position:static;}
+.web-design:before{padding-top:100%;}
+.web-bg, .web-icon{width:100%;}
+.web-bg{height:55%;background-position-x:0;}
+.web-icon{height:50%; top:55%; background-color:#fff;}
+.pro-list{width:90%;}
+.pro-list li{width:100%; float:none; overflow:hidden; margin-bottom:3rem;}
+.pro-list li:last-child{margin-bottom:0;}
+.pro-list li img{max-width:40%; margin:0 auto 0;}
+.pro-list li .pro-img, .pro-list li .pro-txt{float:left; width:50%;}
+.pro-list li .pro-txt{text-align:left;}
+.pro-list li h4{padding-top:1rem;}
+.app-img{position:static;}
+.app-pop, .store{position:static;}
+.app-pop{width:60%; margin:0 auto 1rem;}
+.store{width:60%; margin:auto;}
+.cust-list{width:90%;}
+.cust-list li{width:100%; float:none; margin-bottom:3rem;}
+.cust-list li:last-child{margin-bottom:0;}
+.cust-list li .cust-content{width:70%;}
+}
+@media screen and (max-width:479px){
+html{font-size:75%;}
+.top-main .logo{margin-left:2rem;}
+.top-main .logo img{max-width:60%;}
+label{margin-right:2rem;}
+.pro-list li img{max-width:30%; margin:0 auto 0;}
+.pro-list li .pro-img, .pro-list li .pro-txt{float:none; width:100%;}
+.pro-list li .pro-txt{text-align:center;}
+.app{padding-bottom:3rem;}
+.app-pop{width:70%;}
+.store{width:70%;}
+}
+</style>
+</head>
+<body>
+<!--header : id는 구조 식별자로 사용됨.-->
+<div id="header" class="header row">
+    <div class="top-banner">
+        <p class="kr">아이러브뤱을 통해 당신의 꿈을 이루세요!</p>
+    </div>
+    <div class="top-main">
+        <a href="#" class="logo">
+            <img src="assets/common/logo.png" alt="img"/>
+        </a>
+        <!--toggle but-->
+        <label for="toggle" onclick=""><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <input type="checkbox" id="toggle" />
+        <ul class="nav">
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">디자인</a></li>
+            <li><a href="#">교육</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#" class="eng">My</a></li>
+        </ul>
+    </div>
+</div>
+<!--section-->
+<div id="section" class="section row">
+    <div class="mainbanner row"><!--위의 여백을 확장해줄 구조-->
+        <div class="banner row">
+            <div class="md-title">
+                <h3>
+                    <span>스스로 만드는</span>
+                    <span>반응형웹, 쇼핑몰 아이템</span>
+                </h3>
+                <a href="#">무료체험하기</a>
+            </div>
+            <div class="s-ban">
+                <img src="assets/images/marketing_badge.png" alt="banner" />
+                <p>선착순 500명 당첨이벤트</p>
+            </div>
+            <img src="assets/images/main_top.png" alt="banner" />
+            <div class="right-ban">
+                <img src="assets/images/imweb_main_slogan03.png" alt="banner" />
+            </div>
+        </div>
+    </div>
+    <div class="pro-design row">
+        <h2 class="title">
+            <span>원하는 디자인을</span>
+            <span>가져다 놓기만 하세요.</span>
+        </h2>
+        <p class="subtitle">쉬우면서도 딱 맞는 기능과 감각적인 디자인</p>
+        <ul class="pro-list">
+            <li>
+                <div class="pro-img">
+                    <img src="assets/images/main-sample01.png" alt="img" />
+                </div>
+                <div class="pro-txt">
+                    <h4>포토샵을 몰라도</h4>
+                    <p>
+                        <span>디자인 감각이 없어도 훌륭한</span>
+                        <span>반응형 웹사이트를 만들수 있습니다.</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="pro-img">
+                    <img src="assets/images/main-sample02.png" alt="img" />
+                </div>
+                <div class="pro-txt">
+                    <h4>코드를 몰라도</h4>
+                    <p>
+                        <span>Html, css, javascript를 몰라도</span>
+                        <span>아무런 문제가 되지 않습니다.</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="pro-img">
+                    <img src="assets/images/main-sample03.png" alt="img" />
+                </div>
+                <div class="pro-txt">
+                    <h4>최대한 알아서</h4>
+                    <p>
+                        <span>세밀하게 신경쓰지 않아도 원하는</span>
+                        <span>결과물을 낼 수 있도록 합니다.</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="web-pc row">
+        <h2 class="title">
+            <span>PC만 신경쓰세요!</span>
+            <span>모바일, 태블릿은 알아서</span>
+        </h2>
+        <p class="subtitle eng">#responsiv Web #iloveWeb</p>
+        <div class="pc">
+            <img src="assets/images/pc.png" alt="img" />
+        </div>
+    </div>
+    <div class="web-design row">
+        <div class="web-bg"></div>
+        <div class="web-icon"><!--포지션적용할 레이아웃-->
+            <div class="web-outer">
+                <div class="web-inner">
+                    <h3>
+                        <span>쉬울뿐만 아니라</span>
+                        <span>강력함을 더합니다.</span>
+                    </h3>
+                    <ul class="icon-list">
+                        <li>
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            <p>쇼핑</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <p>회원</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <p>게시판</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <p>갤러리</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <p>폼메일</p>
+                        </li>
+                        <!--two line icon-->
+                        <li>
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                            <p>네이버페이</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <p>쇼셜로그인</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            <p>쇼핑하우연동</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p>인스타그램</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                            <p>전자결제</p>
+                        </li>
+                        <!--three line icon-->
+                        <li class="bot-mar">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <p>다국어지원</p>
+                        </li>
+                        <li class="bot-mar">
+                            <i class="fa fa-plane" aria-hidden="true"></i>
+                            <p>해외배송</p>
+                        </li>
+                        <li class="bot-mar">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            <p>네이버통계</p>
+                        </li>
+                        <li class="bot-mar">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                            <p>구글에드워즈</p>
+                        </li>
+                        <li class="bot-mar">
+                            <i class="fa fa-paypal" aria-hidden="true"></i>
+                            <p>페이팔연동</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app row">
+        <h2 class="title">
+            쇼핑몰 앱
+        </h2>
+        <p class="subtitle">
+            <span>내 사이트 전용앱을 통하여</span>
+            <span>정기적으로 이벤트 정보를 보내세요!</span>
+        </p>
+       <div class="app-content">
+         <div class="app-img">
+            <div class="app-shop">
+                <img src="assets/images/shop-img.png" alt="img" />
+            </div>
+            <div class="app-pop">
+                <div class="pop-top popup">
+                    <h4>사용자알림</h4>
+                    <hr/>
+                    <p>
+                        <span>오늘 단 하루, 1만원 장바구니 쿠폰 증정!</span>
+                        <span>지금 바로 확인하세요.</span>
+                    </p>
+                </div>
+                <div class="pop-bot popup">
+                    <h4>관리자알림</h4>
+                    <hr />
+                    <p>
+                        <span>@iloveweb님의 새주문</span>
+                        <span>플루이드 오일 X 257,800원</span>
+                    </p>
+                </div>
+            </div>
+            <div class="store">
+                <div class="and store-app">
+                    <img src="assets/images/main-apple.png" alt="img" />
+                    <div class="android">
+                        <p>아이폰 앱</p>
+                        <p class="eng"><strong>APP STORE</strong></p>
+                    </div>
+                </div>
+                <div class="goog store-app">
+                    <img src="assets/images/main-google.png" alt="img" />
+                    <div class="google">
+                        <p>안드로이드 앱</p>
+                        <p class="eng"><strong>GOOGLE PLAY</strong></p>
+                    </div>
+                </div>
+                <p>지금 나만의 전용앱을 만들어보세요.</p>
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="custom row">
+        <h2 class="title">아이러브웹 고객인터뷰</h2>
+        <ul class="cust-list">
+            <li>
+                <div class="cust-content">
+                    <img src="assets/images/ceo-icon01.png" alt="img" />
+                    <h4>청순정미소 / 김미소대표</h4>
+                    <p>
+                        브랜드 포지셔닝을 정립하는데 있어 많은 도움이 되었습니다.
+                        또 홈페이지의 제작 이후 관리의 부분도 매우 중요한 부분인데
+                        직접 운영해 보면서 사이트 관리에도 너무나 만족할 수 있었습니다.
+                    </p>
+                    <img src="assets/images/main_interview_logo01.png" alt="img" />
+                </div>
+            </li>
+            <li>
+                <div class="cust-content">
+                    <img src="assets/images/ceo-icon02.png" alt="img" />
+                    <h4>올리베리어 / 이올리 대표</h4>
+                    <p>
+                        타 솔리션도 사용해 봤지만 브랜드 구축 당시 아이러브웹의
+                        자유로운 편집과 접근성이 많은 도움이 되었습니다. 
+                        아이디어와 차별성을 바탕으로 지금 시작을 원한다면 
+                        아이러브웹을 추천합니다. 아무런 문제가 되지 않습니다.
+                    </p>
+                    <img src="assets/images/main_interview_logo02.png" alt="img" />
+                </div>
+            </li>
+            <li>
+                <div class="cust-content">
+                    <img src="assets/images/ceo-icon03.png" alt="img" />
+                    <h4>백만년 아이디어슈퍼 / 이백수 대표</h4>
+                    <p>
+                        아이러브웹 특유의 자유로운 레이아웃으로 간단하게 
+                        홈페이지를 만들었습니다. 자신의 미적 감각을 못 
+                        믿으시는 분들에게도 일단 아이러브웹에서 무료로 시작해보라고 권하고 싶어요.
+                    </p>
+                    <img src="assets/images/main_interview_logo03.png" alt="img" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--footer-->
+
+<!--javascript library file-->
+<script src="assets/js/html5shiv.min.js"></script>
+<script src="assets/js/ie-checker-min.js"></script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/respond.min.js"></script>
+</body>
+</html>

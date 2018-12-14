@@ -1,28 +1,24 @@
-[debug] [2018-12-13T08:16:00.327Z] ----------------------------------------------------------------------
-[debug] [2018-12-13T08:16:00.332Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-12-13T08:16:00.332Z] CLI Version:   4.2.1
-[debug] [2018-12-13T08:16:00.333Z] Platform:      win32
-[debug] [2018-12-13T08:16:00.333Z] Node Version:  v8.12.0
-[debug] [2018-12-13T08:16:00.336Z] Time:          Thu Dec 13 2018 17:16:00 GMT+0900 (대한민국 표준시)
-[debug] [2018-12-13T08:16:00.336Z] ----------------------------------------------------------------------
+[debug] [2018-12-14T06:53:31.286Z] ----------------------------------------------------------------------
+[debug] [2018-12-14T06:53:31.297Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-14T06:53:31.299Z] CLI Version:   4.2.1
+[debug] [2018-12-14T06:53:31.299Z] Platform:      win32
+[debug] [2018-12-14T06:53:31.299Z] Node Version:  v8.12.0
+[debug] [2018-12-14T06:53:31.301Z] Time:          Fri Dec 14 2018 15:53:31 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-14T06:53:31.302Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-12-13T08:16:00.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-12-13T08:16:00.379Z] > authorizing via signed-in user
-[debug] [2018-12-13T08:16:00.382Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-12-13T08:16:00.383Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
-
-[debug] [2018-12-13T08:16:00.998Z] <<< HTTP RESPONSE 200
-[debug] [2018-12-13T08:16:01.004Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dog2789-pofol  
+[debug] [2018-12-14T06:53:31.334Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-14T06:53:31.336Z] > authorizing via signed-in user
+[debug] [2018-12-14T06:53:31.343Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dog2789-pofol  
  
-[debug] [2018-12-13T08:16:02.061Z] <<< HTTP RESPONSE 200
-[debug] [2018-12-13T08:16:02.062Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dog2789-pofol  
+[debug] [2018-12-14T06:53:32.732Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-14T06:53:32.738Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dog2789-pofol  
  
-[debug] [2018-12-13T08:16:03.328Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-14T06:53:34.099Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'D:\portfolio'...
 [info] 
-[debug] [2018-12-13T08:16:03.335Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/654329667940/clients/_:getWebAppConfig  
+[debug] [2018-12-14T06:53:34.120Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/654329667940/clients/_:getWebAppConfig  
  
-[debug] [2018-12-13T08:16:03.988Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-14T06:53:34.813Z] <<< HTTP RESPONSE 200
 [info] i  hosting[dog2789-pofol]: Serving hosting files from: public
 [info] +  hosting[dog2789-pofol]: Local server: http://localhost:5000

@@ -16,7 +16,7 @@ $(".view").click(function(){
 
 /***** My works *****/
 
-$(".my-works li").hover(function(){
+$(".my-works > li > a").hover(function(){
     $(this).children("div").stop().animate({"bottom":0}, 500);
 }, function(){
     $(this).children("div").stop().animate({"bottom":"-340px"}, 500);

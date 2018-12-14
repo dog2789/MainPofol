@@ -27,7 +27,7 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .skill > li:first-child >:last-child {margin-top:0;}
 
 .chart_wrap {width:100%; height:100%; border-radius: 50%;}
-.fa-circle{font-size:1.25rem;}
+.fa-circle{font-size:1.25rem; cursor: pointer;}
 
 /* introduce */
 
@@ -45,7 +45,6 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 /* strength */
 
-.strength {}
 .strength > div > p {color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 5rem; padding-top:1rem;}
 .str{max-width:1200px; width:100%;}
 .str >li{width:20%; float:left; text-align: center;}

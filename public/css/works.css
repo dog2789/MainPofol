@@ -13,20 +13,24 @@
 .ct-works{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
     font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
-.my-works{}
-.my-works > li{width:22%; height:340px; float:left; background-color:#666; overflow:hidden; position: relative;}
+
+.my-works > li{width:22%; height:340px; float:left; background-color:#000; overflow:hidden; position: relative; }
+.my-works > li > a > img{width:100%; transition:all 1s ease;}
+.my-works > li:hover > a > img{transform:scale(1.2); opacity:0.5; filter: opacity(50);}
 .my-works > .ma-ri{margin-right:4%;}
 .my-works > .ma-bt{margin-bottom:4%;}
-.my-works > li > .ma-hov{width:100%; height:100%;position: absolute; bottom:-340px;}
+.my-works > li .ma-hov{width:100%; height:100%;position: absolute; bottom:-340px; display: table;}
+.my-works > li .ma-hov p {color:#fff; font-size:1.5rem; text-shadow:1px 1px 3px rgba(0,0,0,0.3); display:table-cell; vertical-align: middle;
+text-align: center;}
 
-.my-works > li:first-child > .ma-hov{background-color:#cae7b9;}
-.my-works > li:nth-child(2) > .ma-hov{background-color:#f3de8a;}
-.my-works > li:nth-child(3) > .ma-hov{background-color:#eb9486;}
-.my-works > li:nth-child(4) > .ma-hov{background-color:#7e7f9a;}
-.my-works > li:nth-child(5) > .ma-hov{background-color:#97a7b3;}
-.my-works > li:nth-child(6) > .ma-hov{background-color:#db7c26;}
-.my-works > li:nth-child(7) > .ma-hov{background-color:#684e32;}
-.my-works > li:last-child > .ma-hov{background-color:#8c8a89;}
+.my-works > li:first-child .ma-hov{background-color:#cae7b9;}
+.my-works > li:nth-child(2) .ma-hov{background-color:#f3de8a;}
+.my-works > li:nth-child(3) .ma-hov{background-color:#eb9486;}
+.my-works > li:nth-child(4) .ma-hov{background-color:#7e7f9a;}
+.my-works > li:nth-child(5) .ma-hov{background-color:#97a7b3;}
+.my-works > li:nth-child(6) .ma-hov{background-color:#db7c26;}
+.my-works > li:nth-child(7) .ma-hov{background-color:#684e32;}
+.my-works > li:last-child .ma-hov{background-color:#8c8a89;}
 
 
 .view{color:#666; width:5%; margin:auto; text-align: center; margin-top:4rem; cursor: pointer; transition:all 0.5s ease; -webkit-transition:all 0.5s ease; -moz-transition:all 0.5s ease; -o-transition:all 0.5s ease; font-size:1.125rem;}
