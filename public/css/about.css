@@ -23,7 +23,7 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 .skills > div > p{color:#fff; text-align: center;  font-size:2.14rem; margin:0 auto 6rem; padding-top:1rem;}
 .skill > li{width:20%; float:left; text-align: center;}
 .skill > li  .skill_wrap {width:150px; height:150px; position:relative; overflow:hidden; background-color:#fff; border-radius:50%; margin:0 auto;}
-.skill > li  .skill-cir {width:280px; background-color:#fff; margin:auto; margin-left: -67px; margin-top:0px;}
+.skill > li  .skill-cir {width:280px; background-color:#fff; margin:auto; margin-left: -65px; margin-top:0px;}
 .skill > li span {color:#fff; display:block; font-size:1.5rem; margin-top:1rem; font-weight: 400;}
 .skill > li:first-child >:last-child {margin-top:0;}
 

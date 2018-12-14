@@ -373,73 +373,53 @@ $(".ban-tit").each(function(i) {
 
 var data = [{
 	datasets: [{
-		data: [2],
+		data: [10],
 		backgroundColor: [
-			'rgba(255, 99, 132, 0.5)'
+			'rgba(255, 0, 0, 1)'
 		],
 		hoverBackgroundColor: [
-			'rgba(255, 0, 0, 1)'
+			'rgba(255, 0, 0, 0.5)'
 		]
 	}]
 }, {
 	datasets: [{
-		data: [12, 19, 3],
+		data: [20],
 		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-			'rgba(54, 162, 235, 0.2)',
-			'rgba(255, 206, 86, 0.2)'
+			'rgba(0, 174, 239, 1)',
 		],
 		borderColor: [
-			'rgba(255,99,132,1)',
-			'rgba(54, 162, 235, 1)',
-			'rgba(255, 206, 86, 1)'
-		],
-		borderWidth: 1
+			'rgba(0, 174, 239, 0.5)',
+		]
 	}]
 }, {
 	datasets: [{
-		data: [12, 19, 3],
+		data: [30],
 		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-			'rgba(54, 162, 235, 0.2)',
-			'rgba(255, 206, 86, 0.2)'
+			'rgba(0, 166, 82, 1)'
 		],
 		borderColor: [
-			'rgba(255,99,132,1)',
-			'rgba(54, 162, 235, 1)',
-			'rgba(255, 206, 86, 1)'
-		],
-		borderWidth: 1
+			'rgba(0, 166, 82, 0.5)'
+		]
 	}]
 }, {
 	datasets: [{
-		data: [12, 19, 3],
+		data: [40],
 		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-			'rgba(54, 162, 235, 0.2)',
-			'rgba(255, 206, 86, 0.2)'
+			'rgba(202, 202, 64, 1)'
 		],
 		borderColor: [
-			'rgba(255,99,132,1)',
-			'rgba(54, 162, 235, 1)',
-			'rgba(255, 206, 86, 1)'
-		],
-		borderWidth: 1
+			'rgba(202, 202, 64, 0.5)'
+		]
 	}]
 }, {
 	datasets: [{
-		data: [12, 19, 3],
+		data: [50],
 		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-			'rgba(54, 162, 235, 0.2)',
-			'rgba(255, 206, 86, 0.2)'
+			'rgba(243, 136, 65, 1)'
 		],
 		borderColor: [
-			'rgba(255,99,132,1)',
-			'rgba(54, 162, 235, 1)',
-			'rgba(255, 206, 86, 1)'
-		],
-		borderWidth: 1
+			'rgba(243, 136, 65, 0.5)'
+		]
 	}]
 }];
 
@@ -447,9 +427,53 @@ var option = [{
 	tooltips: {
 		enabled: false
 	},
-	cutoutPercentage: 30,
+	cutoutPercentage: 50,
 	rotation: -0.5 * Math.PI,
 	circumference: 1.4 * Math.PI,
+	animation: {
+		animateRotate: true,
+		animateScale: true
+	}
+},{
+	tooltips: {
+		enabled: false
+	},
+	cutoutPercentage: 50,
+	rotation: -0.5 * Math.PI,
+	circumference: 1.95 * Math.PI,
+	animation: {
+		animateRotate: true,
+		animateScale: true
+	}
+},{
+	tooltips: {
+		enabled: false
+	},
+	cutoutPercentage: 50,
+	rotation: -0.5 * Math.PI,
+	circumference: 1.95 * Math.PI,
+	animation: {
+		animateRotate: true,
+		animateScale: true
+	}
+},{
+	tooltips: {
+		enabled: false
+	},
+	cutoutPercentage: 50,
+	rotation: -0.5 * Math.PI,
+	circumference: 1.5 * Math.PI,
+	animation: {
+		animateRotate: true,
+		animateScale: true
+	}
+},{
+	tooltips: {
+		enabled: false
+	},
+	cutoutPercentage: 50,
+	rotation: -0.5 * Math.PI,
+	circumference: 1.6 * Math.PI,
 	animation: {
 		animateRotate: true,
 		animateScale: true
