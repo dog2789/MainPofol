@@ -208,7 +208,7 @@
     .bot-txt{padding-left:1rem;}
     .bot-icon{padding-top:0.9rem; padding-right:1rem;}
 
-    .toggle{height:20%;}
+    .toggle{height:25%;}
     .tog-in a{font-size:2rem; padding-left:1rem;}
     @keyframes smbarAni1 {
         0%{width:0;}
