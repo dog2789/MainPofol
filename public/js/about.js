@@ -365,10 +365,23 @@ $(".ban-tit").each(function(i){
 });
 */
 $(".ban-tit").each(function(i) {
-	$(this).stop().delay(i * 200).animate({
+	if($(window).width() < 993){
+		$(this).stop().delay(i * 200).animate({
+			"top": "92%",
+			"opacity": 1
+		}, 2000);
+	}
+	else if($(window).width() < 769){
+		$(this).stop().delay(i * 200).animate({
+			"top": "95%",
+			"opacity": 1
+		}, 2000);
+	}
+	else {
+		$(this).stop().delay(i * 200).animate({
 		"top": "88%",
 		"opacity": 1
-	}, 2000);
+	}, 2000);}
 });
 
 var data = [{
