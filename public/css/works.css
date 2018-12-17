@@ -35,3 +35,27 @@ text-align: center;}
 
 .view{color:#666; width:5%; margin:auto; text-align: center; margin-top:4rem; cursor: pointer; transition:all 0.5s ease; -webkit-transition:all 0.5s ease; -moz-transition:all 0.5s ease; -o-transition:all 0.5s ease; font-size:1.125rem;}
 .view:hover{color:#000; text-decoration: underline #225f2f;}
+
+
+
+
+
+@media screen and (max-width:1280px){
+    .sec-tit{max-width:1184px;}
+    .ct-works{width:160px; height:45px; line-height: 45px;
+        font-size:2rem; margin:4.28rem auto;}
+    .view{width:10%; font-size:1.125rem;}
+    .my-works > li{width:22%; height:260px; float:left; background-color:#000; overflow:hidden; position: relative; }
+}
+
+@media screen and (max-width:992px){
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:480px){
+    
+}

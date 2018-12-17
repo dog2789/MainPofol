@@ -114,13 +114,13 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 }
 
 @media screen and (max-width:480px){
-    .section{height:55%;}
+    .section{height:60%;}
     .ban-tit{left:1rem;}
     .ban-tit > .main-tit > span{font-size:3rem; line-height:3rem; padding:0; letter-spacing:0.2rem;}
     .ban-tit > h1{font-size:1.75rem;  padding:0.5rem 0;}
-    .ban-tit > p{font-size:0.75rem; line-height:1.125rem; letter-spacing:0.2rem;}
+    .ban-tit > p{font-size:0.75rem; line-height:1.125rem; letter-spacing:0.125rem;}
     .bt-about{width:120px; height:35px; line-height: 35px;
-        font-size:1.5rem; margin:3.75rem auto;}
+        font-size:1.5rem; margin:0 auto 3rem;}
         
     .black-back{height:350px;}    
     .slide > div {width:100%; max-width:390px; margin:0 auto;}
