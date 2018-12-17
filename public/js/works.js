@@ -15,10 +15,14 @@ $(".view").click(function(){
 });
 
 /***** My works *****/
-
+var hei = 0;
 $(".my-works > li > a").hover(function(){
     $(this).children("div").stop().animate({"bottom":0}, 500);
 }, function(){
-    $(this).children("div").stop().animate({"bottom":"-340px"}, 500);
+    $(this).children("div").stop().animate({"bottom":-hei+"px"}, 500);
 });  
 
+$(window).resize(function(){
+    hei = $(".my-works > li").eq(0).width();
+    $(".my-works > li").height(hei);
+}).trigger("resize")

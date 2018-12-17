@@ -364,6 +364,7 @@ $(".ban-tit").each(function(i){
     $(this).stop().delay(i*200).animate({"top":"88%", "opacity":1}, 2000);
 });
 */
+/*
 $(".ban-tit").each(function(i) {
 	if($(window).width() < 993){
 		$(this).stop().delay(i * 200).animate({
@@ -383,6 +384,13 @@ $(".ban-tit").each(function(i) {
 		"opacity": 1
 	}, 2000);}
 });
+*/
+
+$(window).resize(function(){
+	/* var pos = $(".banner").height() - $(".ban-tit").height()/10;
+	$(".ban-tit").css({"top":pos+"px", "opacity":1}); */
+}).trigger("resize");
+
 
 var data = [{
 	datasets: [{
