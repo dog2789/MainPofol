@@ -1,24 +1,31 @@
-[debug] [2018-12-17T11:36:52.369Z] ----------------------------------------------------------------------
-[debug] [2018-12-17T11:36:52.382Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-12-17T11:36:52.383Z] CLI Version:   4.2.1
-[debug] [2018-12-17T11:36:52.383Z] Platform:      win32
-[debug] [2018-12-17T11:36:52.383Z] Node Version:  v8.12.0
-[debug] [2018-12-17T11:36:52.385Z] Time:          Mon Dec 17 2018 20:36:52 GMT+0900 (대한민국 표준시)
-[debug] [2018-12-17T11:36:52.385Z] ----------------------------------------------------------------------
+[debug] [2018-12-17T11:44:50.744Z] ----------------------------------------------------------------------
+[debug] [2018-12-17T11:44:50.756Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-12-17T11:44:50.757Z] CLI Version:   4.2.1
+[debug] [2018-12-17T11:44:50.758Z] Platform:      win32
+[debug] [2018-12-17T11:44:50.758Z] Node Version:  v8.12.0
+[debug] [2018-12-17T11:44:50.760Z] Time:          Mon Dec 17 2018 20:44:50 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-17T11:44:50.761Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-12-17T11:36:52.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-12-17T11:36:52.415Z] > authorizing via signed-in user
-[debug] [2018-12-17T11:36:52.423Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dog2789-pofol  
+[debug] [2018-12-17T11:44:50.806Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-17T11:44:50.809Z] > authorizing via signed-in user
+[debug] [2018-12-17T11:44:50.820Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dog2789-pofol  
  
-[debug] [2018-12-17T11:36:53.768Z] <<< HTTP RESPONSE 200
-[debug] [2018-12-17T11:36:53.774Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dog2789-pofol  
- 
-[debug] [2018-12-17T11:36:55.057Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-17T11:44:52.274Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'D:\portfolio'...
+[info] === Deploying to 'dog2789-pofol'...
 [info] 
-[debug] [2018-12-17T11:36:55.063Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/654329667940/clients/_:getWebAppConfig  
- 
-[debug] [2018-12-17T11:36:55.700Z] <<< HTTP RESPONSE 200
-[info] i  hosting[dog2789-pofol]: Serving hosting files from: public
-[info] +  hosting[dog2789-pofol]: Local server: http://localhost:5000
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-12-17T11:44:52.312Z] >>> HTTP REQUEST PUT https://dog2789-pofol.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2018-12-17T11:44:53.310Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database dog2789-pofol is valid
+[debug] [2018-12-17T11:44:53.318Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/dog2789-pofol/versions  
+
+[debug] [2018-12-17T11:44:55.107Z] <<< HTTP RESPONSE 200
