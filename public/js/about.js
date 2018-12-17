@@ -306,7 +306,7 @@ var banner = new Slide($(".black-table"), {
 	//normal/pingpong/infinite/vertical/fade->normal
 	type: "infinite",
 	//애니메이션 장면전환 대기 속도->2000
-	delay: 50000,
+	delay: 3000,
 	//애니메이션 속도->300
 	speed: 600,
 	//Hover 했을때 true면 멈춤->true
@@ -362,27 +362,6 @@ $(".circle3").click(function(){
 
 $(".ban-tit").each(function(i){
     $(this).stop().delay(i*200).animate({"top":"88%", "opacity":1}, 2000);
-});
-*/
-/*
-$(".ban-tit").each(function(i) {
-	if($(window).width() < 993){
-		$(this).stop().delay(i * 200).animate({
-			"top": "92%",
-			"opacity": 1
-		}, 2000);
-	}
-	else if($(window).width() < 769){
-		$(this).stop().delay(i * 200).animate({
-			"top": "95%",
-			"opacity": 1
-		}, 2000);
-	}
-	else {
-		$(this).stop().delay(i * 200).animate({
-		"top": "88%",
-		"opacity": 1
-	}, 2000);}
 });
 */
 

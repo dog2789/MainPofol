@@ -3,10 +3,10 @@
 /***** Section *****/
 
 .section{width:100%;}
-.banner-out{background-color:#fff; width:100%; position: relative; border:1px solid #00f;}
+.banner-out{background-color:#fff; width:100%; position: relative;}
 .banner{opacity:0.8;}
 
-.ban-tit{border:1px solid #f00; transform:translate(10%, -10%);}
+.ban-tit{transform:translate(7%, -10%);}
 .ban-tit > .main-tit > span{font-size:7rem; font-weight:800; display:block; letter-spacing:-0.3rem; line-height:7rem; padding:0.5rem 0;}
 .ban-tit > h1{font-weight: bold; font-size:3.5rem; letter-spacing:0.3rem; padding:2rem 0; color:#111;}
 .ban-tit > p{font-size:1.125rem; letter-spacing:0.25rem; color:#777; font-weight: 400;}
@@ -33,16 +33,17 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 /* introduce */
 
+.who{height:100%;}
 .who > div > p{color:#fff; text-align: center;  font-size:2.14rem;  margin:0 auto 5rem; padding-top:1rem;}
-.who > div{width:80%; height:100%;}
+.who > div{width:40%; height:80%;}
 .who > div > div {width:49%; height:100%; float:left;}
-.who > div > div > .photo-me{ margin:0 auto; background-color:#999; color:#fff;}
+.photo{ padding-right:2rem; }
+.who > div > div > .photo-me{color:#fff; width:50%; height:80%; float:right; background-image: url("../img/me.jpg"); background-size:cover;}
 .who > div > div > div > span{display:block; color:#fff; font-size:1.25rem; margin-bottom:1rem;}
 .who > div > div > div > span a{color:#fff;}
 .who > div > div > div > span a:hover{color:#666; transition:1s ease; -webkit-transition:1s ease;  -moz-transition:1s ease;
     -o-transition:1s ease;}
 .int-table{padding-left:6rem;}
-.photo{width:50%; height:400px; background-color:#999; float:left;}
 .introduce{width:50%; height:100%;}
 
 /* strength */
@@ -56,7 +57,7 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 
 
 @media screen and (max-width:1280px){
-    .ban-tit{left:3.5rem;}
+    .ban-tit{left:3.5rem; transform:translate(3.5%, -10%);}
     .ban-tit > .main-tit > span{font-size:6rem; line-height:6rem; padding:0.3rem 0;}
     .ban-tit > h1{font-size:3.2rem; padding:1.25rem 0;}
     .ban-tit > p{font-size:1rem;}
@@ -68,11 +69,14 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
     .skills > div > p{font-size:2rem; margin:0 auto 6rem;}
 
     .who > div > p{font-size:2rem;  margin:0 auto 5rem;}
+    .photo{padding-right:2rem;}
+    .who > div > div > .photo-me{width:50%;}
 
     .strength > div > p {font-size:2rem; margin:0 auto 5rem;}
 }
 
 @media screen and (max-width:992px){
+    .ban-tit{left:3.5rem; transform:translate(2.75%, -10%);}
     .ban-tit > .main-tit > span{font-size:5rem; line-height:5rem; padding:0.1rem 0;}
     .ban-tit > h1{font-size:2.8rem;}
     .ban-tit > p{font-size:1rem;}
@@ -87,12 +91,15 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
     .skill > li span {font-size:1.25rem; margin-top:1rem; letter-spacing: 0.125rem;}
 
     .who > div > p{font-size:1.75rem;  margin:0 auto 5rem;}
+    .photo{padding-right:2rem;}
+    .who > div > div > .photo-me{width:50%;}
 
     .strength > div > p {font-size:1.75rem; margin:0 auto 5rem;}
     .str >li > span{font-size:1.125rem;}
 }
 
 @media screen and (max-width:768px){
+    .ban-tit{left:3.5rem; transform:translate(2.75%, -10%);}
     .ban-tit > .main-tit > span{font-size:4rem; line-height:4rem; padding:0.1rem 0;}
     .ban-tit > h1{font-size:2.25rem;}
     .ban-tit > p{font-size:0.85rem; line-height:1.25rem;}
@@ -107,12 +114,15 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
     .skill > li span {font-size:1.25rem; margin-top:1rem; letter-spacing: 0.125rem;}
 
     .who > div > p{font-size:1.75rem;  margin:0 auto 5rem;}
+    .photo{padding-right:2rem;}
+    .who > div > div > .photo-me{width:50%;  height:90%;}
 
     .strength > div > p {font-size:1.75rem; margin:0 auto 5rem;}
     .str >li > p > span{font-size:1.125rem; display:block;}
 }
 
 @media screen and (max-width:480px){
+    .ban-tit{left:3.5rem; transform:translate(2.75%, -10%);}
     .ban-tit{left:1rem;}
     .ban-tit > .main-tit > span{font-size:3rem; line-height:3rem; padding:0; letter-spacing:0.2rem;}
     .ban-tit > h1{font-size:1.75rem;  padding:0.5rem 0;}
@@ -127,9 +137,10 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
     .skill > li  .skill-cir {width:140px; margin-left: -35px; margin-top:-5px;}
     .skill > li span {font-size:0.75rem; margin-top:1rem; letter-spacing: 0.125rem;}
 
-    .who > div > p{font-size:1.5rem;  margin:0 auto 5rem;}
-    .who > div > div > div > span{font-size:1rem; margin-bottom:0.25rem;}
+    .who > div > p{font-size:1.5rem;  margin:0 auto 2rem;}
+    .who > div > div > div > span{font-size:1rem; margin-bottom:1rem;}
     .int-table{padding-left:1.5rem;}
+    .who > div > div > .photo-me{float:none; width:100%; height:100%;}
 
     .strength > div > p {font-size:1.5rem; margin:0 auto 5rem;}
     .str >li > p > span{font-size:0.75rem; display:block;}
