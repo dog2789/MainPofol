@@ -387,7 +387,7 @@ var data = [{
 		backgroundColor: [
 			'rgba(0, 174, 239, 1)',
 		],
-		borderColor: [
+		hoverBackgroundColor: [
 			'rgba(0, 174, 239, 0.5)',
 		]
 	}]
@@ -397,7 +397,7 @@ var data = [{
 		backgroundColor: [
 			'rgba(0, 166, 82, 1)'
 		],
-		borderColor: [
+		hoverBackgroundColor: [
 			'rgba(0, 166, 82, 0.5)'
 		]
 	}]
@@ -407,7 +407,7 @@ var data = [{
 		backgroundColor: [
 			'rgba(202, 202, 64, 1)'
 		],
-		borderColor: [
+		hoverBackgroundColor: [
 			'rgba(202, 202, 64, 0.5)'
 		]
 	}]
@@ -417,7 +417,7 @@ var data = [{
 		backgroundColor: [
 			'rgba(243, 136, 65, 1)'
 		],
-		borderColor: [
+		hoverBackgroundColor: [
 			'rgba(243, 136, 65, 0.5)'
 		]
 	}]
