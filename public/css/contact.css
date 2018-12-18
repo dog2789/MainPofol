@@ -26,8 +26,8 @@
 .contact-box > p{text-align: right; width:95%; font-size:1.25rem; color:#111;}
 .contact-box > p > span{display:block;}
 .contact-box > p > span:first-child{margin-bottom:1rem;}
-.contact-box > p > span:first-child > i{margin-right:1.25rem;}
-.contact-box > p > span:last-child > i {margin-right:0.25rem;}
+.contact-box > p > span:first-child > i{margin-left:1rem;}
+.contact-box > p > span:last-child > i {margin-left:1rem;}
 
 .section{width:100%; height:100%;}
 
@@ -79,5 +79,5 @@
     .sec-sub-tit > li > span{letter-spacing: 0.125rem; font-size:0.65rem;}
     .cont_form > :last-child{width:20%;}
 
-    .contact-box > p > span:last-child > i {margin-right:0.4rem;}
+
 }
