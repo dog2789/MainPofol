@@ -1,22 +1,48 @@
-[debug] [2018-12-18T01:48:23.198Z] ----------------------------------------------------------------------
-[debug] [2018-12-18T01:48:23.204Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
-[debug] [2018-12-18T01:48:23.204Z] CLI Version:   4.2.1
-[debug] [2018-12-18T01:48:23.204Z] Platform:      win32
-[debug] [2018-12-18T01:48:23.204Z] Node Version:  v8.12.0
-[debug] [2018-12-18T01:48:23.206Z] Time:          Tue Dec 18 2018 10:48:23 GMT+0900 (대한민국 표준시)
-[debug] [2018-12-18T01:48:23.206Z] ----------------------------------------------------------------------
+[debug] [2018-12-18T01:54:36.159Z] ----------------------------------------------------------------------
+[debug] [2018-12-18T01:54:36.164Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-12-18T01:54:36.164Z] CLI Version:   4.2.1
+[debug] [2018-12-18T01:54:36.165Z] Platform:      win32
+[debug] [2018-12-18T01:54:36.165Z] Node Version:  v8.12.0
+[debug] [2018-12-18T01:54:36.166Z] Time:          Tue Dec 18 2018 10:54:36 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-18T01:54:36.166Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-12-18T01:48:23.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-12-18T01:48:23.230Z] > authorizing via signed-in user
-[debug] [2018-12-18T01:48:23.234Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dog2789-pofol  
+[debug] [2018-12-18T01:54:36.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-18T01:54:36.189Z] > authorizing via signed-in user
+[debug] [2018-12-18T01:54:36.194Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dog2789-pofol  
  
-[debug] [2018-12-18T01:48:24.449Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-18T01:54:37.437Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'dog2789-pofol'...
 [info] 
 [info] i  deploying database, hosting
 [info] i  database: checking rules syntax...
-[debug] [2018-12-18T01:48:24.476Z] >>> HTTP REQUEST PUT https://dog2789-pofol.firebaseio.com/.settings/rules.json?dryRun=true  
+[debug] [2018-12-18T01:54:37.465Z] >>> HTTP REQUEST PUT https://dog2789-pofol.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2018-12-18T01:54:38.483Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database dog2789-pofol is valid
+[debug] [2018-12-18T01:54:38.490Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/dog2789-pofol/versions  
+
+[debug] [2018-12-18T01:54:40.308Z] <<< HTTP RESPONSE 200
+[info] i  hosting[dog2789-pofol]: beginning deploy...
+[info] i  hosting[dog2789-pofol]: found 276 files in public
+[debug] [2018-12-18T01:54:40.862Z] [hosting] hash cache [cHVibGlj] stored for 276 files
+[debug] [2018-12-18T01:54:40.863Z] [hosting][hash queue][FINAL]
+[debug] [2018-12-18T01:54:40.863Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/dog2789-pofol/versions/2cdb8148e546f670:populateFiles  
+ <request body omitted>
+[debug] [2018-12-18T01:54:43.334Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-18T01:54:43.342Z] [hosting][populate queue][FINAL]
+[debug] [2018-12-18T01:54:43.342Z] [hosting] uploads queued: 3
+[debug] [2018-12-18T01:54:46.889Z] [hosting][upload queue][FINAL]
+[info] +  hosting[dog2789-pofol]: file upload complete
+[debug] [2018-12-18T01:54:46.896Z] [hosting] deploy completed after 6584ms
+[info] i  database: releasing rules...
+[debug] [2018-12-18T01:54:47.138Z] >>> HTTP REQUEST PUT https://dog2789-pofol.firebaseio.com/.settings/rules.json  
  {
   /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
   "rules": {

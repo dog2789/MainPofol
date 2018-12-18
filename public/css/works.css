@@ -11,7 +11,7 @@
 /*** Works ***/
 
 .ct-works{background-color:#225f2f; color:#fff; width:170px; height:50px; text-align:center; line-height: 50px;
-    font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
+    font-size:2.14rem; font-weight: bold; margin:4.28rem auto; text-shadow:1px 1px 3px rgba(0,0,0,0.3);}
 
 .my-works > li{width:22%; float:left; background-color:#000; overflow:hidden; position: relative;}
 .my-works > li > a > img{width:100%; transition:all 1s ease;}
