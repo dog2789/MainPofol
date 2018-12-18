@@ -90,3 +90,7 @@ text-align: center;}
     .my-works > .ma-ri{margin-right:0;}
     .my-works > .ma-bt{margin-bottom:0;}
 }
+
+@media screen and (max-width:360px){
+    .view{width:25%; font-size:1.125rem;}
+}

@@ -122,8 +122,7 @@ font-size:2.14rem; font-weight: bold; margin:4.28rem auto;}
 }
 
 @media screen and (max-width:480px){
-    .ban-tit{left:3.5rem; transform:translate(2.75%, -10%);}
-    .ban-tit{left:1rem;}
+    .ban-tit{left:1rem; transform:translate(2.75%, -10%);}
     .ban-tit > .main-tit > span{font-size:3rem; line-height:3rem; padding:0; letter-spacing:0.2rem;}
     .ban-tit > h1{font-size:1.75rem;  padding:0.5rem 0;}
     .ban-tit > p{font-size:0.75rem; line-height:1.125rem; letter-spacing:0.125rem;}
