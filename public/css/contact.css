@@ -78,6 +78,9 @@
     .sec-sub-tit{margin-top:1rem; overflow: hidden;}
     .sec-sub-tit > li > span{letter-spacing: 0.125rem; font-size:0.65rem;}
     .cont_form > :last-child{width:20%;}
+}
 
+@media screen and (max-width:360px){
 
+    .cont_form > :last-child{width:25%;}
 }
